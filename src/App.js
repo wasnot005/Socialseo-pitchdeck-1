@@ -129,11 +129,12 @@ const InitialPlan = ({ isTier3Included, setIsTier3Included }) => {
         ],
         "Lyrics Videos": [
             { name: "Lyrics Ref A", link: "https://www.instagram.com/reel/DH3QZChSeoG/" },
-            { name: "Lyrics Ref B", link: "https://www.instagram.com/reel/DNqeGuyI4Ph/" },
+            { name: "Lyrics Ref B", link: "https://www.instagram.com/reel/DIGmXltJ2b_/?igsh=MWJuZWhlZmxxdTAwbg==" },
             { name: "Lyrics Ref C", link: "https://www.instagram.com/reel/DIdEgMcBrk4/" },
         ],
         "Event Videos": [
             { name: "Event Ref A", link: "https://www.instagram.com/reel/DNk1urFyqtG/" },
+            { name: "Event Ref B", link: "https://www.instagram.com/reel/DF10kIVhBxK/?igsh=d2gxdjJkaDY5d28z" },
         ],
         "Review Edits": [
             { name: "Review Ref A", link: "https://www.instagram.com/reel/DLRMScYxiRN/" },
