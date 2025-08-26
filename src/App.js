@@ -29,10 +29,11 @@ const Card = ({ title, children, className }) => (
 const Header = () => (
     <header className="fixed top-0 left-0 right-0 z-50 p-4 bg-transparent">
         <div className="container mx-auto flex justify-end items-center">
-             <div className="bg-white/20 backdrop-blur-md p-2 rounded-full">
-                <img src="logo.png" alt="Social SEO Logo" className="w-10 h-10" onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='block'; }}/>
-                <div style={{display: 'none'}} className="w-10 h-10 rounded-full border-2 border-white/50"></div>
-            </div>
+            <img
+                src="logo.png"
+                alt="Social SEO Logo"
+                className="w-10 h-10 object-contain"
+            />
         </div>
     </header>
 );
