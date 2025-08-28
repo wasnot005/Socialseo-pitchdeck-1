@@ -17,15 +17,21 @@ const Card = ({ title, children, className }) => (
     </div>
 );
 
+// Simple branded logo used in the header
+const Logo = () => (
+    <div className="bg-white/10 backdrop-blur-md p-1 rounded-full">
+        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-lg border border-white/20">
+            <span className="text-white font-bold">S</span>
+        </div>
+    </div>
+);
+
 // --- Main Sectional Components ---
 
 const Header = () => (
     <header className="fixed top-0 left-0 right-0 z-50 p-4 bg-transparent">
         <div className="container mx-auto flex justify-end items-center">
-             <div className="bg-white/20 backdrop-blur-md p-2 rounded-full">
-                <img src="logo.png" alt="Social SEO Logo" className="w-10 h-10" onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='block'; }}/>
-                <div style={{display: 'none'}} className="w-10 h-10 rounded-full border-2 border-white/50"></div>
-            </div>
+            <Logo />
         </div>
     </header>
 );
