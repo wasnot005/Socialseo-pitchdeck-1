@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 
 // --- Helper Components ---
 
@@ -29,13 +28,12 @@ const Card = ({ title, children, className }) => (
 
 const Header = () => (
     <header className="fixed top-0 left-0 right-0 z-50 p-4 bg-transparent">
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto flex justify-start items-center">
             <img
                 src="logo.png"
                 alt="Social SEO Logo"
                 className="w-10 h-10 object-contain"
             />
-            <Link to="/updated-proposal" className="text-white font-semibold">Updated Proposal</Link>
         </div>
     </header>
 );
