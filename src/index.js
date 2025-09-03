@@ -6,6 +6,7 @@ import App from './App';
 import UpdatedProposal from './UpdatedProposal';
 import JandCLanguages from './JandCLanguages';
 import PodcastProposal from './PodcastProposal';
+import FounderService from './FounderService';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
         <Route path="/updated-proposal" element={<UpdatedProposal />} />
         <Route path="/jandc-languages" element={<JandCLanguages />} />
         <Route path="/podcast-proposal" element={<PodcastProposal />} />
+        <Route path="/founder-service" element={<FounderService />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
