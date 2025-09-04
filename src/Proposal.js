@@ -322,7 +322,7 @@ const NextSteps = () => (
 );
 
 // --- Main App Component ---
-export default function App() {
+export default function Proposal() {
     const [isTier3Included, setIsTier3Included] = React.useState(true);
 
     return (
