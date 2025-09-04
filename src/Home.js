@@ -314,7 +314,7 @@ export default function Home() {
         </section>
         
         {/* --- Final CTA Section --- */}
-
+        <section className="py-20 bg-gray-900/30 backdrop-blur-sm">
             <div className="container mx-auto px-6 max-w-4xl text-center">
                  <h2 className="text-3xl md:text-4xl font-bold text-white">Ready to Go Viral?</h2>
                     <p className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Book a no-obligation discovery call to see if you qualify for our guaranteed growth plan.</p>
@@ -332,7 +332,7 @@ export default function Home() {
       </main>
 
       {/* --- Footer --- */}
-
+      <footer className="bg-gray-900/30 backdrop-blur-sm">
         <div className="container mx-auto px-6 py-8">
             <div className="text-center text-sm text-gray-500">
                 <p>Guarantee applies only if eligibility criteria are met and onboarding deliverables are provided on time. Views verified via native platform analytics. Full terms are included in the MSA and Guarantee Schedule.</p>
