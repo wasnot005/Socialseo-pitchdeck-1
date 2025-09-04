@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
-import App from './App';
+import Home from "./Home";
+import Proposal from "./Proposal";
 import UpdatedProposal from './UpdatedProposal';
 import JandCLanguages from './JandCLanguages';
 import PodcastProposal from './PodcastProposal';
@@ -13,7 +14,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/proposal" element={<Proposal />} />
         <Route path="/updated-proposal" element={<UpdatedProposal />} />
         <Route path="/jandc-languages" element={<JandCLanguages />} />
         <Route path="/podcast-proposal" element={<PodcastProposal />} />
