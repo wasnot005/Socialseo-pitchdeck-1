@@ -8,30 +8,16 @@ import {
 } from 'lucide-react';
 
 const App = () => {
-  // Original brand colors based on the PRD
-  const originalAccentColor = '#14B8A6'; // The original teal
-  const originalBrandColors = {
-    bg: '#0B1220',
-    card: '#0F1629',
-    accent: originalAccentColor,
-    textPrimary: '#FFFFFF',
-    textSecondary: '#CBD5E1',
-    textTertiary: '#94A3B8',
-    divider: 'rgba(255,255,255,0.12)',
-    shadowAccent: `0 0 0 1px rgba(20,184,166,0.35)`,
-    shadowAmbient: '0 10px 24px rgba(0,0,0,0.35)',
-  };
-
   // Utility function for consistent glass effect
   const glassCardClasses = "bg-[#0F1629]/40 backdrop-blur-md rounded-2xl border border-white/5 shadow-lg shadow-black/20";
-  const iconBaseClasses = `w-6 h-6 text-[${originalBrandColors.accent}] md:w-5 md:h-5`;
+  const iconBaseClasses = "w-6 h-6 text-teal-500 md:w-5 md:h-5";
 
   // Reusable component for a section with an icon and title
   const SectionCard = ({ icon: Icon, title, subtitle, children }) => (
     <div className={`${glassCardClasses} p-6 md:p-8 flex flex-col`}>
       <div className="flex items-start gap-4 mb-4">
-        <div className={`p-3 rounded-md bg-[${originalBrandColors.accent}]/10`}>
-          <Icon className={`w-5 h-5 text-[${originalBrandColors.accent}]`} />
+        <div className="p-3 rounded-md bg-teal-500/10">
+          <Icon className="w-5 h-5 text-teal-500" />
         </div>
         <div>
           <h3 className="text-xl font-semibold text-white/90 leading-snug">{title}</h3>
@@ -45,7 +31,7 @@ const App = () => {
   // Reusable component for list items with a checkmark icon
   const CheckListItem = ({ text, subText, pillText }) => (
     <li className="flex items-center space-x-3 mb-2">
-      <CheckCircle2 className={`w-4 h-4 text-[${originalBrandColors.accent}] flex-shrink-0`} />
+      <CheckCircle2 className="w-4 h-4 text-teal-500 flex-shrink-0" />
       <span className="text-sm md:text-base text-[#CBD5E1]">{text}</span>
     </li>
   );
@@ -116,15 +102,15 @@ const App = () => {
                 <h4 className="text-white/90 font-semibold mb-2">Technical</h4>
                 <ul className="list-none space-y-1">
                   <li className="flex items-start gap-2">
-                    <span className="w-4 h-4 flex-shrink-0 text-[${originalBrandColors.accent}] mt-1">●</span>
+                    <span className="w-4 h-4 flex-shrink-0 text-teal-500 mt-1">●</span>
                     <span className="text-sm text-[#CBD5E1]">9:16, 1080×1920, 20–60s</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-4 h-4 flex-shrink-0 text-[${originalBrandColors.accent}] mt-1">●</span>
+                    <span className="w-4 h-4 flex-shrink-0 text-teal-500 mt-1">●</span>
                     <span className="text-sm text-[#CBD5E1]">Loudness-normalized</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-4 h-4 flex-shrink-0 text-[${originalBrandColors.accent}] mt-1">●</span>
+                    <span className="w-4 h-4 flex-shrink-0 text-teal-500 mt-1">●</span>
                     <span className="text-sm text-[#CBD5E1]">Hard-sub option</span>
                   </li>
                 </ul>
@@ -133,15 +119,15 @@ const App = () => {
                 <h4 className="text-white/90 font-semibold mb-2">Editorial</h4>
                 <ul className="list-none space-y-1">
                   <li className="flex items-start gap-2">
-                    <span className="w-4 h-4 flex-shrink-0 text-[${originalBrandColors.accent}] mt-1">●</span>
+                    <span className="w-4 h-4 flex-shrink-0 text-teal-500 mt-1">●</span>
                     <span className="text-sm text-[#CBD5E1]">Clear hook ≤3s</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-4 h-4 flex-shrink-0 text-[${originalBrandColors.accent}] mt-1">●</span>
+                    <span className="w-4 h-4 flex-shrink-0 text-teal-500 mt-1">●</span>
                     <span className="text-sm text-[#CBD5E1]">Brand-safe language</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-4 h-4 flex-shrink-0 text-[${originalBrandColors.accent}] mt-1">●</span>
+                    <span className="w-4 h-4 flex-shrink-0 text-teal-500 mt-1">●</span>
                     <span className="text-sm text-[#CBD5E1]">Disclaimer where relevant</span>
                   </li>
                 </ul>
@@ -154,22 +140,22 @@ const App = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mt-4">
               <div className="flex flex-col items-center text-center">
                 <span className="text-xs font-semibold text-white/50">1)</span>
-                <ClipboardList className={`w-6 h-6 text-[${originalBrandColors.accent}] mt-1`} />
+                <ClipboardList className="w-6 h-6 text-teal-500 mt-1" />
                 <p className="text-sm text-[#CBD5E1] mt-2">Formalities</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <span className="text-xs font-semibold text-white/50">2)</span>
-                <ShieldCheck className={`w-6 h-6 text-[${originalBrandColors.accent}] mt-1`} />
+                <ShieldCheck className="w-6 h-6 text-teal-500 mt-1" />
                 <p className="text-sm text-[#CBD5E1] mt-2">Week-1 Setup</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <span className="text-xs font-semibold text-white/50">3)</span>
-                <Video className={`w-6 h-6 text-[${originalBrandColors.accent}] mt-1`} />
+                <Video className="w-6 h-6 text-teal-500 mt-1" />
                 <p className="text-sm text-[#CBD5E1] mt-2">First Batch</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <span className="text-xs font-semibold text-white/50">4)</span>
-                <MessageSquare className={`w-6 h-6 text-[${originalBrandColors.accent}] mt-1`} />
+                <MessageSquare className="w-6 h-6 text-teal-500 mt-1" />
                 <p className="text-sm text-[#CBD5E1] mt-2">Ongoing Pipeline</p>
               </div>
             </div>
@@ -179,11 +165,11 @@ const App = () => {
           <SectionCard icon={ShieldCheck} title="Roles, Boundaries & Compliance">
             <ul className="list-none space-y-2 mt-4">
               <li className="flex items-start gap-2">
-                <CheckCircle2 className={`w-4 h-4 mt-1 text-[${originalBrandColors.accent}] flex-shrink-0`} />
+                <CheckCircle2 className="w-4 h-4 mt-1 text-teal-500 flex-shrink-0" />
                 <span className="text-sm text-[#CBD5E1]">We handle: scripting, avatar ops, editing, posting.</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className={`w-4 h-4 mt-1 text-[${originalBrandColors.accent}] flex-shrink-0`} />
+                <CheckCircle2 className="w-4 h-4 mt-1 text-teal-500 flex-shrink-0" />
                 <span className="text-sm text-[#CBD5E1]">Client handles: factual claims, legal approvals.</span>
               </li>
               <li className="flex items-start gap-2">
@@ -191,7 +177,7 @@ const App = () => {
                 <span className="text-sm text-[#CBD5E1]">Not used: PHI, private family footage.</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className={`w-4 h-4 mt-1 text-[${originalBrandColors.accent}] flex-shrink-0`} />
+                <CheckCircle2 className="w-4 h-4 mt-1 text-teal-500 flex-shrink-0" />
                 <span className="text-sm text-[#CBD5E1]">Disclaimers included where relevant.</span>
               </li>
             </ul>
@@ -201,15 +187,15 @@ const App = () => {
           <SectionCard icon={Key} title="Ownership & Data">
             <ul className="list-none space-y-2 mt-4">
               <li className="flex items-start gap-2">
-                <CheckCircle2 className={`w-4 h-4 mt-1 text-[${originalBrandColors.accent}] flex-shrink-0`} />
+                <CheckCircle2 className="w-4 h-4 mt-1 text-teal-500 flex-shrink-0" />
                 <span className="text-sm text-[#CBD5E1]">Client owns final assets.</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className={`w-4 h-4 mt-1 text-[${originalBrandColors.accent}] flex-shrink-0`} />
+                <CheckCircle2 className="w-4 h-4 mt-1 text-teal-500 flex-shrink-0" />
                 <span className="text-sm text-[#CBD5E1]">Avatar data used only for approved content.</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className={`w-4 h-4 mt-1 text-[${originalBrandColors.accent}] flex-shrink-0`} />
+                <CheckCircle2 className="w-4 h-4 mt-1 text-teal-500 flex-shrink-0" />
                 <span className="text-sm text-[#CBD5E1]">Source retention: 90 days.</span>
               </li>
             </ul>
@@ -218,8 +204,8 @@ const App = () => {
           {/* Commercials Triptych */}
           <div className={`${glassCardClasses} p-6 md:p-8 col-span-1 md:col-span-2 lg:col-span-3 flex flex-col`}>
             <div className="flex items-start gap-4 mb-4">
-              <div className={`p-3 rounded-md bg-[${originalBrandColors.accent}]/10`}>
-                <Wallet className={`w-5 h-5 text-[${originalBrandColors.accent}]`} />
+              <div className="p-3 rounded-md bg-teal-500/10">
+                <Wallet className="w-5 h-5 text-teal-500" />
               </div>
               <h3 className="text-xl font-semibold text-white/90 leading-snug">Commercials</h3>
             </div>
