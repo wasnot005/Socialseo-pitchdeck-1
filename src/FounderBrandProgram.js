@@ -21,21 +21,24 @@ import {
 // Tailwind utility classes are used. Visible copy avoids hyphens.
 
 const sections = [
-  { id: "intro", label: "Introduction and Promise" },
-  { id: "audience", label: "Audience and Positioning" },
-  { id: "scope", label: "Scope and Deliverables" },
-  { id: "avatar", label: "AI Avatar Creation" },
-  { id: "workflow", label: "Workflow and SLAs" },
-  { id: "strategy", label: "Content Strategy and Series" },
-  { id: "kpis", label: "KPIs and Reporting" },
-  { id: "compliance", label: "Compliance and Boundaries" },
-  { id: "approvals", label: "Approvals and Governance" },
-  { id: "access", label: "Access and Asset Checklist" },
-  { id: "timeline", label: "Timeline and Milestones" },
-  { id: "risks", label: "Risks and Assumptions" },
-  { id: "handoff", label: "Handoff and Ownership" },
-  { id: "legal", label: "Legal Notes" },
-  { id: "price", label: "Price" },
+
+  { id: "intro", label: "Introduction and Promise", icon: Info },
+  { id: "audience", label: "Audience and Positioning", icon: Users },
+  { id: "scope", label: "Scope and Deliverables", icon: ClipboardList },
+  { id: "avatar", label: "AI Avatar Creation", icon: Cpu },
+  { id: "workflow", label: "Workflow and SLAs", icon: Factory },
+  { id: "strategy", label: "Content Strategy and Series", icon: BookOpen },
+  { id: "kpis", label: "KPIs and Reporting", icon: LineChart },
+  { id: "compliance", label: "Compliance and Boundaries", icon: ShieldCheck },
+  { id: "approvals", label: "Approvals and Governance", icon: Scale },
+  { id: "access", label: "Access and Asset Checklist", icon: Package },
+  { id: "timeline", label: "Timeline and Milestones", icon: CalendarCheck2 },
+  { id: "risks", label: "Risks and Assumptions", icon: Lock },
+  { id: "handoff", label: "Handoff and Ownership", icon: FileText },
+  { id: "legal", label: "Legal Notes", icon: Scale },
+  { id: "price", label: "Price", icon: CheckCircle2 },
+
+
 ];
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
@@ -112,6 +115,11 @@ export default function ProposalPage() {
               <a
                 key={s.id}
                 href={`#${s.id}`}
+
+                className="flex items-center gap-1 text-xs text-slate-200 hover:text-blue-300 transition-colors"
+              >
+                {s.icon ? <s.icon className="w-4 h-4" aria-hidden /> : null}
+
                 className="text-xs text-slate-200 hover:text-blue-300 transition-colors"
               >
                 {s.label}
