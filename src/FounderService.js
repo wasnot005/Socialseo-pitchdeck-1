@@ -38,6 +38,7 @@ const App = () => {
 
   return (
     <div className="relative min-h-screen font-sans text-[#CBD5E1] antialiased overflow-hidden">
+      {/* Animated Gradient Background */}
       <div className="fixed inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-black animated-gradient"></div>
         <div
@@ -267,6 +268,21 @@ const App = () => {
         </footer>
 
       </main>
+
+      <style jsx global>{`
+        .animated-gradient {
+          background: radial-gradient(circle at 10% 20%, rgba(128, 0, 128, 0.4), transparent 50%),
+                      radial-gradient(circle at 80% 90%, rgba(0, 0, 255, 0.4), transparent 50%),
+                      radial-gradient(circle at 50% 50%, rgba(255, 25, 25, 0.3), transparent 50%);
+          background-size: 250% 250%;
+          animation: moveGradient 25s ease infinite;
+        }
+        @keyframes moveGradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+      `}</style>
     </div>
   );
 };
