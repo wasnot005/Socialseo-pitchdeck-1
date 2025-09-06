@@ -51,13 +51,20 @@ const App = () => {
   );
 
   return (
-    <div className="relative min-h-screen font-sans text-[#CBD5E1] antialiased">
-      {/* Background Gradient & Glow (Original) */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-[#0B1220] to-[#0F1629] overflow-hidden">
-        <div className="absolute top-[10%] left-[5%] w-72 h-72 bg-[#14B8A6]/10 rounded-full blur-3xl opacity-50 animate-pulse-slow"></div>
-        <div className="absolute bottom-[20%] right-[10%] w-64 h-64 bg-[#60A5FA]/10 rounded-full blur-3xl opacity-50 animate-pulse-slow delay-1000"></div>
+    <div className="relative min-h-screen font-sans text-[#CBD5E1] antialiased overflow-hidden">
+      {/* Animated Gradient Background */}
+      <div className="fixed inset-0 z-0 overflow-hidden">
+        <div className="absolute inset-0 bg-black animated-gradient"></div>
+        <div
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage:
+              "url(https://www.transparenttextures.com/patterns/grain.png)",
+            mixBlendMode: "overlay",
+          }}
+        ></div>
       </div>
-      
+
       {/* Main Content Container */}
       <main className="relative z-10 max-w-6xl mx-auto px-4 py-8 md:px-8 md:py-12">
         
@@ -275,6 +282,21 @@ const App = () => {
         </footer>
 
       </main>
+
+      <style jsx global>{`
+        .animated-gradient {
+          background: radial-gradient(circle at 10% 20%, rgba(128, 0, 128, 0.4), transparent 50%),
+                      radial-gradient(circle at 80% 90%, rgba(0, 0, 255, 0.4), transparent 50%),
+                      radial-gradient(circle at 50% 50%, rgba(255, 25, 25, 0.3), transparent 50%);
+          background-size: 250% 250%;
+          animation: moveGradient 25s ease infinite;
+        }
+        @keyframes moveGradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+      `}</style>
     </div>
   );
 };
