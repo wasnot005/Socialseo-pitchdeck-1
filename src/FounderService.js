@@ -1,6 +1,4 @@
 import React from 'react';
-
-// Import only the icons we need from lucide-react
 import {
   Layers,
   Video,
@@ -15,18 +13,28 @@ import {
   ChartLine,
 } from 'lucide-react';
 
-const App = () => {
-  // Shared utility classes
-  const glassCardClasses =
-    'bg-[#0F1629]/40 backdrop-blur-md rounded-2xl border border-white/5 shadow-lg shadow-black/20';
-  const iconBaseClasses = 'w-6 h-6 text-[#14B8A6] md:w-5 md:h-5';
+const FounderService = () => {
+  const originalAccentColor = '#14B8A6';
+  const originalBrandColors = {
+    bg: '#0B1220',
+    card: '#0F1629',
+    accent: originalAccentColor,
+    textPrimary: '#FFFFFF',
+    textSecondary: '#CBD5E1',
+    textTertiary: '#94A3B8',
+    divider: 'rgba(255,255,255,0.12)',
+    shadowAccent: `0 0 0 1px rgba(20,184,166,0.35)`,
+    shadowAmbient: '0 10px 24px rgba(0,0,0,0.35)',
+  };
 
-  // Reusable component for a section with an icon and title
+  const glassCardClasses = 'bg-[#0F1629]/40 backdrop-blur-md rounded-2xl border border-white/5 shadow-lg shadow-black/20';
+  const iconBaseClasses = `w-6 h-6 text-[${originalBrandColors.accent}] md:w-5 md:h-5`;
+
   const SectionCard = ({ icon: Icon, title, subtitle, children }) => (
     <div className={`${glassCardClasses} p-6 md:p-8 flex flex-col`}>
       <div className="flex items-start gap-4 mb-4">
-        <div className="p-3 rounded-md bg-[#14B8A6]/10">
-          <Icon className="w-5 h-5 text-[#14B8A6]" />
+        <div className={`p-3 rounded-md bg-[${originalBrandColors.accent}]/10`}>
+          <Icon className={`w-5 h-5 text-[${originalBrandColors.accent}]`} />
         </div>
         <div>
           <h3 className="text-xl font-semibold text-white/90 leading-snug">{title}</h3>
@@ -37,31 +45,23 @@ const App = () => {
     </div>
   );
 
-  // Reusable component for list items with a checkmark icon
-  const CheckListItem = ({ text }) => (
+  const CheckListItem = ({ text, subText, pillText }) => (
     <li className="flex items-center space-x-3 mb-2">
-      <CheckCircle2 className="w-4 h-4 text-[#14B8A6] flex-shrink-0" />
+      <CheckCircle2 className={`w-4 h-4 text-[${originalBrandColors.accent}] flex-shrink-0`} />
       <span className="text-sm md:text-base text-[#CBD5E1]">{text}</span>
     </li>
   );
 
   return (
     <div className="relative min-h-screen font-sans text-[#CBD5E1] antialiased">
-      <div className="fixed inset-0 z-0 overflow-hidden">
-        <div className="absolute inset-0 bg-black animated-gradient"></div>
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage:
-              'url(https://www.transparenttextures.com/patterns/grain.png)',
-            mixBlendMode: 'overlay',
-          }}
-        ></div>
+      {/* Background Gradient & Glow */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-[#0B1220] to-[#0F1629] overflow-hidden">
+        <div className="absolute top-[10%] left-[5%] w-72 h-72 bg-[#14B8A6]/10 rounded-full blur-3xl opacity-50 animate-pulse-slow"></div>
+        <div className="absolute bottom-[20%] right-[10%] w-64 h-64 bg-[#60A5FA]/10 rounded-full blur-3xl opacity-50 animate-pulse-slow delay-1000"></div>
       </div>
 
       {/* Main Content Container */}
       <main className="relative z-10 max-w-6xl mx-auto px-4 py-8 md:px-8 md:py-12">
-        
         {/* Hero Section */}
         <section className="text-center mb-16 md:mb-20">
           <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight">Founder-Led Personal Brand</h1>
@@ -73,7 +73,6 @@ const App = () => {
 
         {/* Section Cards Container */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          
           {/* What You Get Each Month */}
           <SectionCard icon={Layers} title="What You Get Each Month">
             <ul className="list-none space-y-3 mt-4">
@@ -102,7 +101,7 @@ const App = () => {
               </li>
             </ul>
           </SectionCard>
-          
+
           {/* Deliverable Standards */}
           <SectionCard icon={Video} title="Deliverable Standards">
             <div className="space-y-4">
@@ -110,15 +109,15 @@ const App = () => {
                 <h4 className="text-white/90 font-semibold mb-2">Technical</h4>
                 <ul className="list-none space-y-1">
                   <li className="flex items-start gap-2">
-                    <span className="w-4 h-4 flex-shrink-0 text-[#14B8A6] mt-1">●</span>
+                    <span className={`w-4 h-4 flex-shrink-0 text-[${originalBrandColors.accent}] mt-1`}>●</span>
                     <span className="text-sm text-[#CBD5E1]">9:16, 1080×1920, 20–60s</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-4 h-4 flex-shrink-0 text-[#14B8A6] mt-1">●</span>
+                    <span className={`w-4 h-4 flex-shrink-0 text-[${originalBrandColors.accent}] mt-1`}>●</span>
                     <span className="text-sm text-[#CBD5E1]">Loudness-normalized</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-4 h-4 flex-shrink-0 text-[#14B8A6] mt-1">●</span>
+                    <span className={`w-4 h-4 flex-shrink-0 text-[${originalBrandColors.accent}] mt-1`}>●</span>
                     <span className="text-sm text-[#CBD5E1]">Hard-sub option</span>
                   </li>
                 </ul>
@@ -127,15 +126,15 @@ const App = () => {
                 <h4 className="text-white/90 font-semibold mb-2">Editorial</h4>
                 <ul className="list-none space-y-1">
                   <li className="flex items-start gap-2">
-                    <span className="w-4 h-4 flex-shrink-0 text-[#14B8A6] mt-1">●</span>
+                    <span className={`w-4 h-4 flex-shrink-0 text-[${originalBrandColors.accent}] mt-1`}>●</span>
                     <span className="text-sm text-[#CBD5E1]">Clear hook ≤3s</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-4 h-4 flex-shrink-0 text-[#14B8A6] mt-1">●</span>
+                    <span className={`w-4 h-4 flex-shrink-0 text-[${originalBrandColors.accent}] mt-1`}>●</span>
                     <span className="text-sm text-[#CBD5E1]">Brand-safe language</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-4 h-4 flex-shrink-0 text-[#14B8A6] mt-1">●</span>
+                    <span className={`w-4 h-4 flex-shrink-0 text-[${originalBrandColors.accent}] mt-1`}>●</span>
                     <span className="text-sm text-[#CBD5E1]">Disclaimer where relevant</span>
                   </li>
                 </ul>
@@ -148,36 +147,36 @@ const App = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4 mt-4">
               <div className="flex flex-col items-center text-center">
                 <span className="text-xs font-semibold text-white/50">1)</span>
-                <ClipboardList className="w-6 h-6 text-[#14B8A6] mt-1" />
+                <ClipboardList className={`w-6 h-6 text-[${originalBrandColors.accent}] mt-1`} />
                 <p className="text-sm text-[#CBD5E1] mt-2">Formalities</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <span className="text-xs font-semibold text-white/50">2)</span>
-                <ShieldCheck className="w-6 h-6 text-[#14B8A6] mt-1" />
+                <ShieldCheck className={`w-6 h-6 text-[${originalBrandColors.accent}] mt-1`} />
                 <p className="text-sm text-[#CBD5E1] mt-2">Week-1 Setup</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <span className="text-xs font-semibold text-white/50">3)</span>
-                <Video className="w-6 h-6 text-[#14B8A6] mt-1" />
+                <Video className={`w-6 h-6 text-[${originalBrandColors.accent}] mt-1`} />
                 <p className="text-sm text-[#CBD5E1] mt-2">First Batch</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <span className="text-xs font-semibold text-white/50">4)</span>
-                <MessageSquare className="w-6 h-6 text-[#14B8A6] mt-1" />
+                <MessageSquare className={`w-6 h-6 text-[${originalBrandColors.accent}] mt-1`} />
                 <p className="text-sm text-[#CBD5E1] mt-2">Ongoing Pipeline</p>
               </div>
             </div>
           </SectionCard>
-          
+
           {/* Roles, Boundaries & Compliance */}
           <SectionCard icon={ShieldCheck} title="Roles, Boundaries & Compliance">
             <ul className="list-none space-y-2 mt-4">
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 mt-1 text-[#14B8A6] flex-shrink-0" />
+                <CheckCircle2 className={`w-4 h-4 mt-1 text-[${originalBrandColors.accent}] flex-shrink-0`} />
                 <span className="text-sm text-[#CBD5E1]">We handle: scripting, avatar ops, editing, posting.</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 mt-1 text-[#14B8A6] flex-shrink-0" />
+                <CheckCircle2 className={`w-4 h-4 mt-1 text-[${originalBrandColors.accent}] flex-shrink-0`} />
                 <span className="text-sm text-[#CBD5E1]">Client handles: factual claims, legal approvals.</span>
               </li>
               <li className="flex items-start gap-2">
@@ -185,7 +184,7 @@ const App = () => {
                 <span className="text-sm text-[#CBD5E1]">Not used: PHI, private family footage.</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 mt-1 text-[#14B8A6] flex-shrink-0" />
+                <CheckCircle2 className={`w-4 h-4 mt-1 text-[${originalBrandColors.accent}] flex-shrink-0`} />
                 <span className="text-sm text-[#CBD5E1]">Disclaimers included where relevant.</span>
               </li>
             </ul>
@@ -195,25 +194,25 @@ const App = () => {
           <SectionCard icon={Key} title="Ownership & Data">
             <ul className="list-none space-y-2 mt-4">
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 mt-1 text-[#14B8A6] flex-shrink-0" />
+                <CheckCircle2 className={`w-4 h-4 mt-1 text-[${originalBrandColors.accent}] flex-shrink-0`} />
                 <span className="text-sm text-[#CBD5E1]">Client owns final assets.</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 mt-1 text-[#14B8A6] flex-shrink-0" />
+                <CheckCircle2 className={`w-4 h-4 mt-1 text-[${originalBrandColors.accent}] flex-shrink-0`} />
                 <span className="text-sm text-[#CBD5E1]">Avatar data used only for approved content.</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 mt-1 text-[#14B8A6] flex-shrink-0" />
+                <CheckCircle2 className={`w-4 h-4 mt-1 text-[${originalBrandColors.accent}] flex-shrink-0`} />
                 <span className="text-sm text-[#CBD5E1]">Source retention: 90 days.</span>
               </li>
             </ul>
           </SectionCard>
 
-          {/* Commercials Triptych */}
+          {/* Commercials */}
           <div className={`${glassCardClasses} p-6 md:p-8 col-span-1 md:col-span-2 lg:col-span-3 flex flex-col`}>
             <div className="flex items-start gap-4 mb-4">
-              <div className="p-3 rounded-md bg-[#14B8A6]/10">
-                <Wallet className="w-5 h-5 text-[#14B8A6]" />
+              <div className={`p-3 rounded-md bg-[${originalBrandColors.accent}]/10`}>
+                <Wallet className={`w-5 h-5 text-[${originalBrandColors.accent}]`} />
               </div>
               <h3 className="text-xl font-semibold text-white/90 leading-snug">Commercials</h3>
             </div>
@@ -228,7 +227,7 @@ const App = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Inputs & Access */}
           <SectionCard icon={ClipboardList} title="Inputs & Access">
             <ul className="list-none space-y-2 mt-4">
@@ -247,7 +246,7 @@ const App = () => {
               <CheckListItem text="Compliance check complete" />
             </ul>
           </SectionCard>
-          
+
           {/* Out of Scope */}
           <SectionCard icon={Ban} title="Out of Scope (Add-ons)">
             <ul className="list-none space-y-2 mt-4">
@@ -256,7 +255,7 @@ const App = () => {
               <CheckListItem text="Live events coverage" />
             </ul>
           </SectionCard>
-          
+
           {/* Communication Cadence */}
           <SectionCard icon={MessageSquare} title="Communication Cadence">
             <ul className="list-none space-y-2 mt-4">
@@ -265,34 +264,18 @@ const App = () => {
               <CheckListItem text="Escalation path documented" />
             </ul>
           </SectionCard>
-
         </div>
-        
+
         {/* Footer Note */}
         <footer className="mt-16 md:mt-24 text-center">
           <p className="text-xs text-[#94A3B8] leading-tight max-w-lg mx-auto">
             © 2025 All rights reserved.
           </p>
         </footer>
-
       </main>
-      <style>{`
-        .animated-gradient {
-          background: radial-gradient(circle at 10% 20%, rgba(128, 0, 128, 0.4), transparent 50%),
-                      radial-gradient(circle at 80% 90%, rgba(0, 0, 255, 0.4), transparent 50%),
-                      radial-gradient(circle at 50% 50%, rgba(255, 25, 25, 0.3), transparent 50%);
-          background-size: 250% 250%;
-          animation: moveGradient 25s ease infinite;
-        }
-        @keyframes moveGradient {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-      `}</style>
     </div>
   );
 };
 
-export default App;
+export default FounderService;
 
