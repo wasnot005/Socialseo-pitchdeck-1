@@ -14,6 +14,8 @@ import {
   Lock,
   Info,
   Cpu,
+  Award,
+  TrendingUp,
 } from "lucide-react";
 
 // Single file React page that implements the proposal with the requested changes.
@@ -115,13 +117,9 @@ export default function ProposalPage() {
               <a
                 key={s.id}
                 href={`#${s.id}`}
-
                 className="flex items-center gap-1 text-xs text-slate-200 hover:text-blue-300 transition-colors"
               >
                 {s.icon ? <s.icon className="w-4 h-4" aria-hidden /> : null}
-
-                className="text-xs text-slate-200 hover:text-blue-300 transition-colors"
-              >
                 {s.label}
               </a>
             ))}
@@ -145,9 +143,27 @@ export default function ProposalPage() {
             showcase leadership and quality and community impact.
           </p>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <Card><div className="text-xl font-semibold">Authority</div><div className="text-sm text-slate-300 mt-1">Clear leadership presence</div></Card>
-            <Card><div className="text-xl font-semibold">Trust</div><div className="text-sm text-slate-300 mt-1">Transparency and proof through process</div></Card>
-            <Card><div className="text-xl font-semibold">Growth</div><div className="text-sm text-slate-300 mt-1">Audience that engages and acts</div></Card>
+            <Card>
+              <div className="flex items-center gap-2">
+                <Award className="w-5 h-5 text-blue-300" aria-hidden />
+                <div className="text-xl font-semibold">Authority</div>
+              </div>
+              <div className="text-sm text-slate-300 mt-1">Clear leadership presence</div>
+            </Card>
+            <Card>
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="w-5 h-5 text-blue-300" aria-hidden />
+                <div className="text-xl font-semibold">Trust</div>
+              </div>
+              <div className="text-sm text-slate-300 mt-1">Transparency and proof through process</div>
+            </Card>
+            <Card>
+              <div className="flex items-center gap-2">
+                <TrendingUp className="w-5 h-5 text-blue-300" aria-hidden />
+                <div className="text-xl font-semibold">Growth</div>
+              </div>
+              <div className="text-sm text-slate-300 mt-1">Audience that engages and acts</div>
+            </Card>
           </div>
         </div>
       </section>
