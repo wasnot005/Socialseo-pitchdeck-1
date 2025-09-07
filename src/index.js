@@ -9,6 +9,7 @@ import JandCLanguages from './JandCLanguages';
 import PodcastProposal from './PodcastProposal';
 import FounderService from './FounderService';
 import ProposalPage from './FounderBrandProgram';
+import AIRapGuide from './AIRapGuide';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,7 @@ root.render(
         <Route path="/podcast-proposal" element={<PodcastProposal />} />
         <Route path="/founder-service" element={<FounderService />} />
         <Route path="/founder-brand-program" element={<ProposalPage />} />
+        <Route path="/airapguide" element={<AIRapGuide />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
