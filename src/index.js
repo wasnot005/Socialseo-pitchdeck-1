@@ -10,6 +10,7 @@ import PodcastProposal from './PodcastProposal';
 import FounderService from './FounderService';
 import ProposalPage from './FounderBrandProgram';
 import AIRapGuide from './AIRapGuide';
+import RajSocialSEO from './RajSocialSEO';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +25,7 @@ root.render(
         <Route path="/founder-service" element={<FounderService />} />
         <Route path="/founder-brand-program" element={<ProposalPage />} />
         <Route path="/airapguide" element={<AIRapGuide />} />
+        <Route path="/raj-socialseo" element={<RajSocialSEO />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
