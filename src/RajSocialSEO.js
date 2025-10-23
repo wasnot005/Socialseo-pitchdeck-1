@@ -145,12 +145,12 @@ const VolumePlans = () => {
   return (
     <section className="py-20 text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Volume Plans</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Volume Plan</h2>
         <p className="text-lg text-white/70 max-w-3xl mx-auto text-center mb-12">
           Pyramid split: <b>T1 least</b>, <b>T2 mid</b>, <b>T3 most</b>. Month 2+ recycle uplift <b>+30–50%</b> effective outputs.
         </p>
 
-        <Card title="Primary Plan - ~1,000 posts per month" className="max-w-4xl mx-auto">
+        <Card title="Plan - ~1,000 posts per month" className="max-w-4xl mx-auto">
           <div className="overflow-x-auto">
             <table className="w-full text-left table-auto">
               <thead>
