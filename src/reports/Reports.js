@@ -13,7 +13,7 @@ const Reports = () => (
           to="/reports/kushreport1"
           className="block rounded-xl border border-indigo-500/40 bg-indigo-500/10 p-6 transition hover:border-indigo-400 hover:bg-indigo-500/20"
         >
-          <h2 className="text-2xl font-semibold">Khush 30-Day Performance Report</h2>
+          <h2 className="text-2xl font-semibold">Kush 30-Day Performance Report</h2>
           <p className="text-gray-300 mt-2">
             PPT-style landing page summarizing performance metrics, highlights, and next steps.
           </p>
