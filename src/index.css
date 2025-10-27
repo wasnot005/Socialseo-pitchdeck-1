@@ -29,3 +29,15 @@ code {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+/* Safe text wrapping helpers */
+.soft-wrap {
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+}
+
+.nowrap-numbers {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}

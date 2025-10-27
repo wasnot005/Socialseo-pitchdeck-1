@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './index.css';
 import Home from "./Home";
 import Proposal from "./Proposal";
@@ -30,6 +30,7 @@ root.render(
         <Route path="/raj-socialseo" element={<RajSocialSEO />} />
         <Route path="/reports" element={<Reports />} />
         <Route path="/reports/kushreport1" element={<KushReport1 />} />
+        <Route path="/reports/khushreport1" element={<Navigate to="/reports/kushreport1" replace />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
