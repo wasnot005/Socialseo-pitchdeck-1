@@ -184,7 +184,7 @@ export default function JandCLanguages() {
         <div className="bg-gray-900 font-sans leading-relaxed text-white">
             <div className="fixed inset-0 z-0 overflow-hidden">
                  <div className="absolute inset-0 bg-black animated-gradient"></div>
-                 <div className="absolute inset-0 opacity-20" style={{backgroundImage: 'url(https://www.transparenttextures.com/patterns/grain.png)', mixBlendMode: 'overlay'}}></div>
+                 <div className="absolute inset-0 opacity-10" style={{backgroundImage: 'url(https://www.transparenttextures.com/patterns/grain.png)', mixBlendMode: 'overlay'}}></div>
             </div>
             <div className="relative z-10">
                 <Header />
@@ -197,20 +197,6 @@ export default function JandCLanguages() {
                     <PricingTerms />
                 </main>
             </div>
-            <style jsx global>{`
-                .animated-gradient {
-                    background: radial-gradient(circle at 10% 20%, rgba(94, 37, 153, 0.4), transparent 50%),
-                                radial-gradient(circle at 80% 90%, rgba(37, 89, 153, 0.4), transparent 50%),
-                                radial-gradient(circle at 50% 50%, rgba(153, 37, 37, 0.3), transparent 50%);
-                    background-size: 250% 250%;
-                    animation: moveGradient 25s ease infinite;
-                }
-                @keyframes moveGradient {
-                    0% { background-position: 0% 50%; }
-                    50% { background-position: 100% 50%; }
-                    100% { background-position: 0% 50%; }
-                }
-            `}</style>
         </div>
     );
 }
