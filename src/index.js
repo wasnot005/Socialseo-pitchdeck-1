@@ -13,6 +13,7 @@ import AIRapGuide from './AIRapGuide';
 import RajSocialSEO from './RajSocialSEO';
 import Reports from './reports/Reports';
 import KushReport1 from './reports/KushReport1';
+import KushReport2 from './reports/kushreport2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,6 +31,7 @@ root.render(
         <Route path="/raj-socialseo" element={<RajSocialSEO />} />
         <Route path="/reports" element={<Reports />} />
         <Route path="/reports/kushreport1" element={<KushReport1 />} />
+        <Route path="/reports/kushreport2" element={<KushReport2 />} />
         <Route path="/reports/khushreport1" element={<Navigate to="/reports/kushreport1" replace />} />
       </Routes>
     </BrowserRouter>
