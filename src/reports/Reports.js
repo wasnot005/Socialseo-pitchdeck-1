@@ -23,9 +23,9 @@ const Reports = () => (
           to="/reports/kushreport2"
           className="block rounded-xl border border-purple-500/40 bg-purple-500/10 p-6 transition hover:border-purple-400 hover:bg-purple-500/20"
         >
-          <h2 className="text-2xl font-semibold">Kush Viral Momentum Report</h2>
+          <h2 className="text-2xl font-semibold">Kush – 90 Days Personal Branding Report</h2>
           <p className="text-gray-300 mt-2">
-            November performance deep dive highlighting the viral hit, reach sources, and top content matrix.
+            A performance breakdown after posting 90 videos across a strategic 3-month campaign (Q4).
           </p>
         </Link>
       </div>
