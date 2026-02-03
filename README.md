@@ -1,18 +1,22 @@
 # Social SEO Pitchdeck
 
-This project contains several proposal pages for different initiatives.
+This project is synced with GitHub: [https://github.com/wasnot005/Socialseo-pitchdeck-1](https://github.com/wasnot005/Socialseo-pitchdeck-1)
 
-## Subpage Domains
+## Live Pages
 
-- https://your-domain.com/
-  - https://your-domain.com/proposal
-  - https://your-domain.com/updated-proposal
-  - https://your-domain.com/jandc-languages
-  - https://your-domain.com/podcast-proposal
-  - https://your-domain.com/founder-service
-  - https://your-domain.com/founder-brand-program
-  - https://your-domain.com/airapguide
-  - https://your-domain.com/raj-socialseo
-  - https://your-domain.com/reports
-    - https://your-domain.com/reports/kushreport1
+Domain: https://socialdeck.socialseo.in
+
+- **Home**: https://socialdeck.socialseo.in/
+- **Proposal**: https://socialdeck.socialseo.in/proposal
+- **Updated Proposal**: https://socialdeck.socialseo.in/updated-proposal
+- **JandC Languages**: https://socialdeck.socialseo.in/jandc-languages
+- **Podcast Proposal**: https://socialdeck.socialseo.in/podcast-proposal
+- **Founder Service**: https://socialdeck.socialseo.in/founder-service
+- **Founder Brand Program**: https://socialdeck.socialseo.in/founder-brand-program
+- **AI Rap Guide**: https://socialdeck.socialseo.in/airapguide
+- **Raj Social SEO**: https://socialdeck.socialseo.in/raj-socialseo
+- **Reports**: https://socialdeck.socialseo.in/reports
+  - **Kush Report 1**: https://socialdeck.socialseo.in/reports/kushreport1
+  - **Kush Report 2**: https://socialdeck.socialseo.in/reports/kushreport2
+- **Kush YouTube Pitch**: https://socialdeck.socialseo.in/kush-youtube-pitch
 
