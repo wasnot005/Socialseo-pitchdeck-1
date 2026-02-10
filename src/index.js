@@ -16,29 +16,34 @@ import KushReport1 from './reports/KushReport1';
 import KushReport2 from './reports/kushreport2';
 import KushYouTubePitch from './KushYouTubePitch';
 import SocialSeoPlans from './SocialSeoPlans';
+import MainHub from './MainHub';
+import Layout from './Layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/proposal" element={<Proposal />} />
-        <Route path="/updated-proposal" element={<UpdatedProposal />} />
-        <Route path="/jandc-languages" element={<JandCLanguages />} />
-        <Route path="/podcast-proposal" element={<PodcastProposal />} />
-        <Route path="/founder-service" element={<FounderService />} />
-        <Route path="/founder-brand-program" element={<ProposalPage />} />
-        <Route path="/airapguide" element={<AIRapGuide />} />
-        <Route path="/raj-socialseo" element={<RajSocialSEO />} />
-        <Route path="/reports" element={<Reports />} />
-        <Route path="/reports/kushreport1" element={<KushReport1 />} />
-        <Route path="/reports/kushreport2" element={<KushReport2 />} />
-        <Route path="/kush-youtube-pitch" element={<KushYouTubePitch />} />
-        <Route path="/reports/khushreport1" element={<Navigate to="/reports/kushreport1" replace />} />
-        <Route path="/socialseoplans" element={<SocialSeoPlans />} />
-        <Route path="/founder-ai-clone" element={<SocialSeoPlans />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/proposal" element={<Proposal />} />
+          <Route path="/updated-proposal" element={<UpdatedProposal />} />
+          <Route path="/jandc-languages" element={<JandCLanguages />} />
+          <Route path="/podcast-proposal" element={<PodcastProposal />} />
+          <Route path="/founder-service" element={<FounderService />} />
+          <Route path="/founder-brand-program" element={<ProposalPage />} />
+          <Route path="/airapguide" element={<AIRapGuide />} />
+          <Route path="/raj-socialseo" element={<RajSocialSEO />} />
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/reports/kushreport1" element={<KushReport1 />} />
+          <Route path="/reports/kushreport2" element={<KushReport2 />} />
+          <Route path="/kush-youtube-pitch" element={<KushYouTubePitch />} />
+          <Route path="/reports/khushreport1" element={<Navigate to="/reports/kushreport1" replace />} />
+          <Route path="/socialseoplans" element={<SocialSeoPlans />} />
+          <Route path="/founder-ai-clone" element={<SocialSeoPlans />} />
+          <Route path="/main-hub" element={<MainHub />} />
+        </Routes>
+      </Layout>
     </BrowserRouter>
   </React.StrictMode>,
 );

@@ -38,22 +38,10 @@ const App = () => {
 
   return (
     <div className="relative min-h-screen font-sans text-[#CBD5E1] antialiased overflow-hidden">
-      {/* Animated Gradient Background */}
-      <div className="fixed inset-0 z-0 overflow-hidden">
-        <div className="absolute inset-0 bg-black animated-gradient"></div>
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage:
-              "url(https://www.transparenttextures.com/patterns/grain.png)",
-            mixBlendMode: "overlay",
-          }}
-        ></div>
-      </div>
 
       {/* Main Content Container */}
       <main className="relative z-10 max-w-6xl mx-auto px-4 py-8 md:px-8 md:py-12">
-        
+
         {/* Hero Section */}
         <section className="text-center mb-16 md:mb-20">
           <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight">Founder-Led Personal Brand</h1>
@@ -65,7 +53,7 @@ const App = () => {
 
         {/* Section Cards Container */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          
+
           {/* What You Get Each Month */}
           <SectionCard icon={Layers} title="What You Get Each Month">
             <ul className="list-none space-y-3 mt-4">
@@ -94,7 +82,7 @@ const App = () => {
               </li>
             </ul>
           </SectionCard>
-          
+
           {/* Deliverable Standards */}
           <SectionCard icon={Video} title="Deliverable Standards">
             <div className="space-y-4">
@@ -160,7 +148,7 @@ const App = () => {
               </div>
             </div>
           </SectionCard>
-          
+
           {/* Roles, Boundaries & Compliance */}
           <SectionCard icon={ShieldCheck} title="Roles, Boundaries & Compliance">
             <ul className="list-none space-y-2 mt-4">
@@ -220,7 +208,7 @@ const App = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Inputs & Access */}
           <SectionCard icon={ClipboardList} title="Inputs & Access">
             <ul className="list-none space-y-2 mt-4">
@@ -239,7 +227,7 @@ const App = () => {
               <CheckListItem text="Compliance check complete" />
             </ul>
           </SectionCard>
-          
+
           {/* Out of Scope */}
           <SectionCard icon={Ban} title="Out of Scope (Add-ons)">
             <ul className="list-none space-y-2 mt-4">
@@ -248,7 +236,7 @@ const App = () => {
               <CheckListItem text="Live events coverage" />
             </ul>
           </SectionCard>
-          
+
           {/* Communication Cadence */}
           <SectionCard icon={MessageSquare} title="Communication Cadence">
             <ul className="list-none space-y-2 mt-4">
@@ -259,7 +247,7 @@ const App = () => {
           </SectionCard>
 
         </div>
-        
+
         {/* Footer Note */}
         <footer className="mt-16 md:mt-24 text-center">
           <p className="text-xs text-[#94A3B8] leading-tight max-w-lg mx-auto">
@@ -268,21 +256,6 @@ const App = () => {
         </footer>
 
       </main>
-
-      <style jsx global>{`
-        .animated-gradient {
-          background: radial-gradient(circle at 10% 20%, rgba(128, 0, 128, 0.4), transparent 50%),
-                      radial-gradient(circle at 80% 90%, rgba(0, 0, 255, 0.4), transparent 50%),
-                      radial-gradient(circle at 50% 50%, rgba(255, 25, 25, 0.3), transparent 50%);
-          background-size: 250% 250%;
-          animation: moveGradient 25s ease infinite;
-        }
-        @keyframes moveGradient {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-      `}</style>
     </div>
   );
 };

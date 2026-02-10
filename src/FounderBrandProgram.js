@@ -43,7 +43,7 @@ const sections = [
 
 ];
 
-function Eyebrow({ children }: { children: React.ReactNode }) {
+function Eyebrow({ children }) {
   return (
     <div className="text-xs tracking-widest uppercase font-semibold text-blue-300">
       {children}
@@ -56,11 +56,6 @@ function SectionHeader({
   title,
   icon: Icon,
   subtitle,
-}: {
-  eyebrow: string;
-  title: string;
-  icon?: any;
-  subtitle?: string;
 }) {
   return (
     <div className="mb-6 flex items-start gap-3">
@@ -80,7 +75,7 @@ function SectionHeader({
   );
 }
 
-function Card({ children }: { children: React.ReactNode }) {
+function Card({ children }) {
   return (
     <div className="rounded-2xl border border-slate-700/70 bg-slate-800/60 p-6 shadow-sm">
       {children}
@@ -88,7 +83,7 @@ function Card({ children }: { children: React.ReactNode }) {
   );
 }
 
-function CheckRow({ children }: { children: React.ReactNode }) {
+function CheckRow({ children }) {
   return (
     <li className="flex gap-3 items-start">
       <CheckCircle2 className="w-5 h-5 mt-0.5 text-blue-300" aria-hidden />
@@ -101,7 +96,7 @@ export default function ProposalPage() {
   const nav = useMemo(() => sections.slice(0, sections.length), []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1b1035] via-[#101a39] to-[#0a1024] text-slate-100">
+    <div className="min-h-screen text-slate-100">
       {/* Sticky Header */}
       <header className="sticky top-0 z-50 backdrop-blur bg-slate-900/70 border-b border-slate-800">
         <div className="max-w-[1120px] mx-auto px-4 py-3 flex items-center justify-between">

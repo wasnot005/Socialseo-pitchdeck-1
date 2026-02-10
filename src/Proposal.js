@@ -51,7 +51,7 @@ const Hero = () => (
                 <Card className="bg-black/10"><h4 className="font-bold text-lg mb-2">Platforms</h4><p className="text-white/70">IG, YT, FB, X & Reddit</p></Card>
                 <Card className="bg-black/10"><h4 className="font-bold text-lg mb-2">Reporting</h4><p className="text-white/70">Monthly Review Deck</p></Card>
             </div>
-             <div className="mt-16 max-w-4xl mx-auto text-left space-y-4">
+            <div className="mt-16 max-w-4xl mx-auto text-left space-y-4">
                 <h3 className="text-2xl font-bold text-center mb-6">Our Core Objectives</h3>
                 <p className="text-lg text-white/80 flex items-start"><Icon path="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" className="w-6 h-6 mr-3 text-indigo-400 flex-shrink-0 mt-1" /> Establish a consistent, multi-platform presence around the artist.</p>
                 <p className="text-lg text-white/80 flex items-start"><Icon path="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" className="w-6 h-6 mr-3 text-indigo-400 flex-shrink-0 mt-1" /> Prioritize Quality (T1), Scale (T2), and Learning Velocity (T3).</p>
@@ -90,11 +90,11 @@ const NumberCounter = ({ value, text, isTier3Included }) => {
             if (progress < 1) {
                 requestAnimationFrame(animate);
             } else {
-                 setCount(end);
+                setCount(end);
             }
         };
         const timeoutId = setTimeout(() => {
-            setCount(0); 
+            setCount(0);
             requestAnimationFrame(animate);
         }, 100);
         return () => clearTimeout(timeoutId);
@@ -161,12 +161,12 @@ const InitialPlan = ({ isTier3Included, setIsTier3Included }) => {
                         {Object.entries(referenceLinks).map(([category, links]) => (
                             <Card key={category} title={category} className="bg-black/10">
                                 <div className="space-y-3">
-                                {links.map(ref => (
-                                    <a key={ref.name} href={ref.link} target="_blank" rel="noopener noreferrer" className="group bg-black/20 text-white/80 font-semibold p-3 rounded-lg hover:bg-black/40 transition-colors duration-200 flex items-center justify-between">
-                                        <span>{ref.name}</span>
-                                        <ArrowIcon />
-                                    </a>
-                                ))}
+                                    {links.map(ref => (
+                                        <a key={ref.name} href={ref.link} target="_blank" rel="noopener noreferrer" className="group bg-black/20 text-white/80 font-semibold p-3 rounded-lg hover:bg-black/40 transition-colors duration-200 flex items-center justify-between">
+                                            <span>{ref.name}</span>
+                                            <ArrowIcon />
+                                        </a>
+                                    ))}
                                 </div>
                             </Card>
                         ))}
@@ -214,9 +214,9 @@ const Operations = () => (
                     </div>
                 </Card>
                 <Card title="Workflow & Governance">
-                     <p className="text-white/80 mb-4"><strong>Workflow:</strong> Intake → Clip Direction → Edit → QC → Schedule → Publish → Engage → Track.</p>
-                     <p className="text-white/80 mb-4"><strong>Sources:</strong> Podcasts, events, photos, BTS, live captures, and fan-derived content.</p>
-                     <p className="text-white/80"><strong>Guardrails:</strong> We follow a rigorous Quality Check (QC) process, avoid unverified leaks, credit creators, and use music as permitted.</p>
+                    <p className="text-white/80 mb-4"><strong>Workflow:</strong> Intake → Clip Direction → Edit → QC → Schedule → Publish → Engage → Track.</p>
+                    <p className="text-white/80 mb-4"><strong>Sources:</strong> Podcasts, events, photos, BTS, live captures, and fan-derived content.</p>
+                    <p className="text-white/80"><strong>Guardrails:</strong> We follow a rigorous Quality Check (QC) process, avoid unverified leaks, credit creators, and use music as permitted.</p>
                 </Card>
             </div>
         </div>
@@ -231,7 +231,7 @@ const Pricing = ({ isTier3Included }) => {
         { type: 'Review page', unit: 1.35, qty: 1, standard: 1.60 },
         { type: 'Tier 3 Lab page', unit: 1.45, qty: 1, standard: 1.75, tier3: true },
     ];
-    
+
     const filteredData = isTier3Included ? pricingData : pricingData.filter(p => !p.tier3);
     const initialTotal = filteredData.reduce((sum, item) => sum + (item.unit * item.qty), 0);
     const discount = 0.50;
@@ -280,7 +280,7 @@ const RedditStrategy = () => (
 );
 
 const FuturePlan = () => (
-     <section className="py-20 text-white">
+    <section className="py-20 text-white">
         <div className="container mx-auto px-4">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Future Plan: A Scaled Network</h2>
             <Card className="max-w-6xl mx-auto mb-8">
@@ -301,8 +301,8 @@ const FuturePlan = () => (
                 </div>
             </Card>
             <Card className="max-w-6xl mx-auto">
-                 <h3 className="text-2xl font-bold text-center mb-6">Scaled Content Plan (20 Pages)</h3>
-                 <div className="overflow-x-auto"><table className="w-full text-left"><thead><tr className="border-b border-white/20"><th className="p-4">Tier</th><th className="p-4">Page Type</th><th className="p-4"># Pages</th><th className="p-4">Posts/Month</th><th className="p-4">Total Content</th></tr></thead><tbody><tr className="border-b border-white/10"><td className="p-4">Tier 1</td><td className="p-4">Podcast</td><td className="p-4">4</td><td className="p-4">30</td><td className="p-4 font-bold">480</td></tr><tr className="border-b border-white/10"><td className="p-4">Tier 1</td><td className="p-4">Lyrics</td><td className="p-4">2</td><td className="p-4">20</td><td className="p-4 font-bold">160</td></tr><tr className="border-b border-white/10"><td className="p-4">Tier 2</td><td className="p-4">Events</td><td className="p-4">3</td><td className="p-4">60</td><td className="p-4 font-bold">720</td></tr><tr className="border-b border-white/10"><td className="p-4">Tier 2</td><td className="p-4">Reviews</td><td className="p-4">3</td><td className="p-4">60</td><td className="p-4 font-bold">720</td></tr><tr className="border-b border-white/10"><td className="p-4">Tier 3</td><td className="p-4">Labs</td><td className="p-4">5</td><td className="p-4">100</td><td className="p-4 font-bold">2000</td></tr></tbody><tfoot><tr className="bg-white/10"><td colSpan="4" className="p-4 font-bold text-right">Total Monthly Content (x4 Platforms)</td><td className="p-4 font-black text-xl">4,080+</td></tr></tfoot></table></div>
+                <h3 className="text-2xl font-bold text-center mb-6">Scaled Content Plan (20 Pages)</h3>
+                <div className="overflow-x-auto"><table className="w-full text-left"><thead><tr className="border-b border-white/20"><th className="p-4">Tier</th><th className="p-4">Page Type</th><th className="p-4"># Pages</th><th className="p-4">Posts/Month</th><th className="p-4">Total Content</th></tr></thead><tbody><tr className="border-b border-white/10"><td className="p-4">Tier 1</td><td className="p-4">Podcast</td><td className="p-4">4</td><td className="p-4">30</td><td className="p-4 font-bold">480</td></tr><tr className="border-b border-white/10"><td className="p-4">Tier 1</td><td className="p-4">Lyrics</td><td className="p-4">2</td><td className="p-4">20</td><td className="p-4 font-bold">160</td></tr><tr className="border-b border-white/10"><td className="p-4">Tier 2</td><td className="p-4">Events</td><td className="p-4">3</td><td className="p-4">60</td><td className="p-4 font-bold">720</td></tr><tr className="border-b border-white/10"><td className="p-4">Tier 2</td><td className="p-4">Reviews</td><td className="p-4">3</td><td className="p-4">60</td><td className="p-4 font-bold">720</td></tr><tr className="border-b border-white/10"><td className="p-4">Tier 3</td><td className="p-4">Labs</td><td className="p-4">5</td><td className="p-4">100</td><td className="p-4 font-bold">2000</td></tr></tbody><tfoot><tr className="bg-white/10"><td colSpan="4" className="p-4 font-bold text-right">Total Monthly Content (x4 Platforms)</td><td className="p-4 font-black text-xl">4,080+</td></tr></tfoot></table></div>
             </Card>
         </div>
     </section>
@@ -326,12 +326,7 @@ export default function Proposal() {
     const [isTier3Included, setIsTier3Included] = React.useState(true);
 
     return (
-        <div className="bg-gray-900 font-sans leading-relaxed text-white">
-            <div className="fixed inset-0 z-0 overflow-hidden">
-                 <div className="absolute inset-0 bg-black animated-gradient"></div>
-                 <div className="absolute inset-0 opacity-20" style={{backgroundImage: 'url(https://www.transparenttextures.com/patterns/grain.png)', mixBlendMode: 'overlay'}}></div>
-            </div>
-
+        <div className="bg-transparent font-sans leading-relaxed text-white">
             <div className="relative z-10">
                 <Header />
                 <main>
@@ -346,20 +341,6 @@ export default function Proposal() {
                     <NextSteps />
                 </main>
             </div>
-            <style jsx global>{`
-                .animated-gradient {
-                    background: radial-gradient(circle at 10% 20%, rgba(128, 0, 128, 0.4), transparent 50%),
-                                radial-gradient(circle at 80% 90%, rgba(0, 0, 255, 0.4), transparent 50%),
-                                radial-gradient(circle at 50% 50%, rgba(255, 25, 25, 0.3), transparent 50%);
-                    background-size: 250% 250%;
-                    animation: moveGradient 25s ease infinite;
-                }
-                @keyframes moveGradient {
-                    0% { background-position: 0% 50%; }
-                    50% { background-position: 100% 50%; }
-                    100% { background-position: 0% 50%; }
-                }
-            `}</style>
         </div>
     );
 }

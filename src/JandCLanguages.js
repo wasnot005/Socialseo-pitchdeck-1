@@ -20,7 +20,7 @@ const Card = ({ title, children, className }) => (
 const Header = () => (
     <header className="fixed top-0 left-0 right-0 z-50 p-4 bg-transparent print:hidden">
         <div className="container mx-auto flex justify-end items-center">
-             {/* Logo removed as per request */}
+            {/* Logo removed as per request */}
         </div>
     </header>
 );
@@ -55,7 +55,7 @@ const Scope = () => (
                     </ul>
                 </Card>
                 <Card title="What's Excluded">
-                     <ul className="space-y-3 text-white/70 list-disc list-inside">
+                    <ul className="space-y-3 text-white/70 list-disc list-inside">
                         <li>Posting & Scheduling</li>
                         <li>Community Management</li>
                         <li>Paid Ad Management</li>
@@ -101,17 +101,17 @@ const Team = () => (
             <h2 className="text-4xl md:text-5xl font-bold mb-12">The Dedicated Production Team</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                 <Card>
-                    <div className="w-24 h-24 rounded-full bg-indigo-500/20 mx-auto mb-4 flex items-center justify-center"><Icon path="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" className="w-12 h-12 text-indigo-400"/></div>
+                    <div className="w-24 h-24 rounded-full bg-indigo-500/20 mx-auto mb-4 flex items-center justify-center"><Icon path="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" className="w-12 h-12 text-indigo-400" /></div>
                     <h3 className="text-2xl font-bold">Editor A (Lead)</h3>
                     <p className="text-white/70 mt-2">Owns talking-head assemblies, audio cleanup, subtitles, and complex fixes.</p>
                 </Card>
                 <Card>
-                    <div className="w-24 h-24 rounded-full bg-purple-500/20 mx-auto mb-4 flex items-center justify-center"><Icon path="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" className="w-12 h-12 text-purple-400"/></div>
+                    <div className="w-24 h-24 rounded-full bg-purple-500/20 mx-auto mb-4 flex items-center justify-center"><Icon path="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" className="w-12 h-12 text-purple-400" /></div>
                     <h3 className="text-2xl font-bold">Editor B</h3>
                     <p className="text-white/70 mt-2">Drives parallel throughput on all content and manages rush items within SLA.</p>
                 </Card>
                 <Card>
-                    <div className="w-24 h-24 rounded-full bg-pink-500/20 mx-auto mb-4 flex items-center justify-center"><Icon path="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.998 15.998 0 013.388-1.62" className="w-12 h-12 text-pink-400"/></div>
+                    <div className="w-24 h-24 rounded-full bg-pink-500/20 mx-auto mb-4 flex items-center justify-center"><Icon path="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.998 15.998 0 013.388-1.62" className="w-12 h-12 text-pink-400" /></div>
                     <h3 className="text-2xl font-bold">Graphic Designer</h3>
                     <p className="text-white/70 mt-2">Handles thumbnail concepts, typography, brand consistency, and A/B variants.</p>
                 </Card>
@@ -142,7 +142,7 @@ const Workflow = () => (
 );
 
 const PricingTerms = () => (
-     <section className="py-20 text-white">
+    <section className="py-20 text-white">
         <div className="container mx-auto px-4">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Pricing & Terms</h2>
             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-start">
@@ -151,9 +151,9 @@ const PricingTerms = () => (
                     <p className="text-5xl font-black my-2">₹1,26,000</p>
                     <p className="text-white/70 mb-6">Editing-Only. No per-reel charges.</p>
                     <ul className="space-y-2 text-sm text-white/80">
-                        <li className="flex items-center"><Icon path="M9 12.75L11.25 15 15 9.75" className="w-5 h-5 mr-2 text-green-400"/>90 Videos + 30 Thumbnails</li>
-                        <li className="flex items-center"><Icon path="M9 12.75L11.25 15 15 9.75" className="w-5 h-5 mr-2 text-green-400"/>Flexible Volume Buffer</li>
-                        <li className="flex items-center"><Icon path="M9 12.75L11.25 15 15 9.75" className="w-5 h-5 mr-2 text-green-400"/>Notion Delivery & Packaging</li>
+                        <li className="flex items-center"><Icon path="M9 12.75L11.25 15 15 9.75" className="w-5 h-5 mr-2 text-green-400" />90 Videos + 30 Thumbnails</li>
+                        <li className="flex items-center"><Icon path="M9 12.75L11.25 15 15 9.75" className="w-5 h-5 mr-2 text-green-400" />Flexible Volume Buffer</li>
+                        <li className="flex items-center"><Icon path="M9 12.75L11.25 15 15 9.75" className="w-5 h-5 mr-2 text-green-400" />Notion Delivery & Packaging</li>
                     </ul>
                 </Card>
                 <Card>
@@ -167,7 +167,7 @@ const PricingTerms = () => (
                             <h4 className="font-bold">Re-scope Policy</h4>
                             <p className="text-white/70">Sustained volume over 170 videos/mo triggers a friendly chat to revise the package.</p>
                         </div>
-                         <div>
+                        <div>
                             <h4 className="font-bold">Revisions</h4>
                             <p className="text-white/70">One minor revision pass per asset is included, with a 24h turnaround.</p>
                         </div>
@@ -181,11 +181,7 @@ const PricingTerms = () => (
 // --- Main App Component ---
 export default function JandCLanguages() {
     return (
-        <div className="bg-gray-900 font-sans leading-relaxed text-white">
-            <div className="fixed inset-0 z-0 overflow-hidden">
-                 <div className="absolute inset-0 bg-black animated-gradient"></div>
-                 <div className="absolute inset-0 opacity-20" style={{backgroundImage: 'url(https://www.transparenttextures.com/patterns/grain.png)', mixBlendMode: 'overlay'}}></div>
-            </div>
+        <div className="font-sans leading-relaxed text-white">
             <div className="relative z-10">
                 <Header />
                 <main>
@@ -197,20 +193,6 @@ export default function JandCLanguages() {
                     <PricingTerms />
                 </main>
             </div>
-            <style jsx global>{`
-                .animated-gradient {
-                    background: radial-gradient(circle at 10% 20%, rgba(94, 37, 153, 0.4), transparent 50%),
-                                radial-gradient(circle at 80% 90%, rgba(37, 89, 153, 0.4), transparent 50%),
-                                radial-gradient(circle at 50% 50%, rgba(153, 37, 37, 0.3), transparent 50%);
-                    background-size: 250% 250%;
-                    animation: moveGradient 25s ease infinite;
-                }
-                @keyframes moveGradient {
-                    0% { background-position: 0% 50%; }
-                    50% { background-position: 100% 50%; }
-                    100% { background-position: 0% 50%; }
-                }
-            `}</style>
         </div>
     );
 }

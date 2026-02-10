@@ -503,20 +503,7 @@ const NextSteps = () => (
 // Main Layout
 export default function KushYouTubePitch() {
     return (
-        <div className="bg-gray-900 font-sans leading-relaxed text-white min-h-screen selection:bg-indigo-500 selection:text-white">
-            {/* Background Layers */}
-            <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
-                <div className="absolute inset-0 bg-black animated-gradient"></div>
-                <div
-                    className="absolute inset-0 opacity-20"
-                    style={{
-                        backgroundImage:
-                            "url(https://www.transparenttextures.com/patterns/grain.png)",
-                        mixBlendMode: "overlay",
-                    }}
-                ></div>
-            </div>
-
+        <div className="font-sans text-slate-200">
             <div className="relative z-10">
                 <Header />
                 <main>

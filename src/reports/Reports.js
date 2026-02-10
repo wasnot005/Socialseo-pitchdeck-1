@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Reports = () => (
-  <div className="min-h-screen bg-gray-950 text-white">
+  <div className="min-h-screen text-white">
     <div className="max-w-4xl mx-auto px-6 py-16">
       <h1 className="text-4xl font-bold mb-8">Reports</h1>
       <p className="text-lg text-gray-300 mb-6">

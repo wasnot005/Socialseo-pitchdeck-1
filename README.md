@@ -19,4 +19,24 @@ Domain: https://socialdeck.socialseo.in
   - **Kush Report 1**: https://socialdeck.socialseo.in/reports/kushreport1
   - **Kush Report 2**: https://socialdeck.socialseo.in/reports/kushreport2
 - **Kush YouTube Pitch**: https://socialdeck.socialseo.in/kush-youtube-pitch
-- **Social SEO Plans**: https://socialdeck.socialseo.in/founder-ai-clone
+- **/founder-ai-clone**: Social SEO Plans page ("Founder AI Clone Personal Brand System") featuring tiered plans, guarantee terms, and direct booking integration.
+- **/main-hub**: Central directory page listing all available routes and proposals.
+
+## Global Styling
+The application now uses a **Global Layout System** (`src/Layout.js`) that provides a unified, animated background across all pages, ensuring visual consistency and reducing code duplication.
+
+### Refactoring
+The following pages have been refactored to remove local background implementations and styles, ensuring they inherit the global layout:
+- `UpdatedProposal.js`
+- `JandCLanguages.js`
+- `PodcastProposal.js`
+- `FounderService.js`
+- `FounderBrandProgram.js`
+- `RajSocialSEO.js`
+- `Reports.js`
+- `KushReport1.js`
+- `kushreport2.js`
+- `KushYouTubePitch.js`
+
+## Deployment
+```

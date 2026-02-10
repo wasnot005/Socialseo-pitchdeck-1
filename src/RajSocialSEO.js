@@ -6,7 +6,7 @@ import { Card } from "./components/ui";
 // --- Helper UI Components (from ui.jsx) ---
 const Icon = ({ path, className = "w-6 h-6" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-       strokeWidth={1.5} stroke="currentColor" className={className}>
+    strokeWidth={1.5} stroke="currentColor" className={className}>
     <path strokeLinecap="round" strokeLinejoin="round" d={path} />
   </svg>
 );
@@ -18,7 +18,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-start items-center">
         {/* Placeholder text/logo since we can't use logo.png */}
         <div className="text-xl font-bold tracking-tight text-white/90">
-            <span className="text-indigo-400">Social</span> SEO Proposal
+          <span className="text-indigo-400">Social</span> SEO Proposal
         </div>
       </div>
     </header>
@@ -179,7 +179,7 @@ const VolumePlans = () => {
           </div>
           <p className="text-white/70 text-sm mt-4">Recycle derivations per top 10% post: 3 title swaps + 2 thumb swaps + 1 EN/HI swap + 1 meme/split. ≈7 derivatives.</p>
         </Card>
-        
+
         {/* Scale view removed as part of the toggle removal */}
       </div>
     </section>
@@ -277,7 +277,7 @@ const FAQ = () => {
     return (
       <div className="border-b border-white/20 last:border-b-0">
         <button className="w-full flex justify-between items-center text-left py-4 px-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-lg"
-                onClick={() => setOpen(!open)} aria-expanded={open} aria-controls={`faq-answer-${title.replace(/\s/g, '-')}`}>
+          onClick={() => setOpen(!open)} aria-expanded={open} aria-controls={`faq-answer-${title.replace(/\s/g, '-')}`}>
           <span className="text-xl font-bold">{title}</span>
           <Icon path={open ? "M19.5 12h-15" : "M12 4.5v15m7.5-7.5h-15"} className="w-6 h-6 transform transition-transform" />
         </button>
@@ -314,20 +314,7 @@ export default function RajSocialSEO() {
   const [mode, setMode] = useState("all");
 
   return (
-    <div className="bg-gray-900 font-sans leading-relaxed text-white min-h-screen">
-      
-      {/* --- Animated background + grain (PRD 3.1) --- */}
-      <div className="fixed inset-0 z-0 overflow-hidden print:hidden">
-        <div className="absolute inset-0 bg-black animated-gradient"></div>
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage:
-              "url(https://www.transparenttextures.com/patterns/grain.png)",
-            mixBlendMode: "overlay",
-          }}
-        />
-      </div>
+    <div className="font-sans leading-relaxed text-white min-h-screen">
 
       {/* --- Foreground (PRD 3.1) --- */}
       <div className="relative z-10">
@@ -347,46 +334,15 @@ export default function RajSocialSEO() {
           <FAQ />
           {/* No CTA/Next Steps section per spec */}
         </main>
-        
+
         <footer className="py-12 text-center text-sm text-white/50 print:text-black/50">
-            <p>Raj Shamani Social SEO Proposal | Designed for Mass Short-Form Distribution.</p>
-            {/* Specified line removed */}
+          <p>Raj Shamani Social SEO Proposal | Designed for Mass Short-Form Distribution.</p>
+          {/* Specified line removed */}
         </footer>
       </div>
 
       {/* --- Global Styles & Keyframes (PRD 3.2 & 6) --- */}
       <style>{`
-        .animated-gradient {
-          background: radial-gradient(
-              circle at 10% 20%,
-              rgba(128, 0, 128, 0.4),
-              transparent 50%
-            ),
-            radial-gradient(
-              circle at 80% 90%,
-              rgba(0, 0, 255, 0.4),
-              transparent 50%
-            ),
-            radial-gradient(
-              circle at 50% 50%,
-              rgba(255, 25, 25, 0.3),
-              transparent 50%
-            );
-          background-size: 250% 250%;
-          animation: moveGradient 25s ease infinite;
-        }
-        @keyframes moveGradient {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
-        }
-
         /* Print Styles for PDF/Print-friendly output (PRD 6) */
         @media print {
             body {

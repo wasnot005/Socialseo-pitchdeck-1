@@ -45,7 +45,7 @@ const Modal = ({ contentUrl, onClose }) => {
 const AnimatedSection = ({ children, className = "" }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
-  
+
   return (
     <motion.section
       ref={ref}
@@ -60,37 +60,7 @@ const AnimatedSection = ({ children, className = "" }) => {
 };
 
 // --- BACKGROUND COMPONENT ---
-const Background = () => {
-    return (
-        <>
-            <style>{`
-              .animated-gradient {
-                background: radial-gradient(circle at 10% 20%, rgba(128, 0, 128, 0.4), transparent 50%),
-                            radial-gradient(circle at 80% 90%, rgba(0, 0, 255, 0.4), transparent 50%),
-                            radial-gradient(circle at 50% 50%, rgba(255, 25, 25, 0.3), transparent 50%);
-                background-size: 250% 250%;
-                animation: moveGradient 25s ease infinite;
-              }
-              @keyframes moveGradient {
-                0% { background-position: 0% 50%; }
-                50% { background-position: 100% 50%; }
-                100% { background-position: 0% 50%; }
-              }
-            `}</style>
-            <div className="fixed inset-0 z-0 overflow-hidden">
-              <div className="absolute inset-0 bg-black animated-gradient"></div>
-              <div
-                className="absolute inset-0 opacity-20"
-                style={{
-                  backgroundImage:
-                    "url(https://www.transparenttextures.com/patterns/grain.png)",
-                  mixBlendMode: "overlay",
-                }}
-              ></div>
-            </div>
-        </>
-    );
-};
+
 
 
 // --- HERO SECTION ---
@@ -98,7 +68,7 @@ const Hero = () => {
   return (
     <header className="relative text-center py-24 sm:py-32 overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -106,7 +76,7 @@ const Hero = () => {
         >
           Your End-to-End <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">Podcast Growth</span> Package.
         </motion.h1>
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
@@ -114,7 +84,7 @@ const Hero = () => {
         >
           A complete, high-quality production service designed to turn your long-form content into a powerful growth engine. This proposal outlines our partnership to handle your entire podcast workflow.
         </motion.p>
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
@@ -126,7 +96,7 @@ const Hero = () => {
             <p className="mt-6 text-4xl font-bold text-slate-50">USD $3,000 <span className="text-base font-medium text-slate-400">/ month</span></p>
           </div>
         </motion.div>
-         <motion.p 
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.6 }}
@@ -196,20 +166,20 @@ const ProcessTimeline = () => {
           <p className="mt-4 max-w-2xl mx-auto text-slate-400">Our battle-tested workflow ensures quality and speed, from raw footage to live post.</p>
         </div>
         <div className="mt-16 max-w-3xl mx-auto">
-            <div className="relative pl-5 border-l-2 border-slate-700">
-              {processSteps.map((step, index) => (
-                <div key={index} className="relative mb-12 last:mb-0">
-                  <div className="absolute -left-[30px] top-1.5 flex h-7 w-7 items-center justify-center rounded-full bg-slate-900 border-2 border-slate-600">
-                    <div className="h-2.5 w-2.5 rounded-full bg-blue-400"></div>
-                  </div>
-                  <div className="ml-8">
-                    <p className="text-sm font-semibold text-blue-400">STEP {index + 1}</p>
-                    <h3 className="text-xl font-bold text-slate-100 mt-1">{step.title}</h3>
-                    <p className="text-slate-400 mt-2">{step.description}</p>
-                  </div>
+          <div className="relative pl-5 border-l-2 border-slate-700">
+            {processSteps.map((step, index) => (
+              <div key={index} className="relative mb-12 last:mb-0">
+                <div className="absolute -left-[30px] top-1.5 flex h-7 w-7 items-center justify-center rounded-full bg-slate-900 border-2 border-slate-600">
+                  <div className="h-2.5 w-2.5 rounded-full bg-blue-400"></div>
                 </div>
-              ))}
-            </div>
+                <div className="ml-8">
+                  <p className="text-sm font-semibold text-blue-400">STEP {index + 1}</p>
+                  <h3 className="text-xl font-bold text-slate-100 mt-1">{step.title}</h3>
+                  <p className="text-slate-400 mt-2">{step.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="mt-12 max-w-4xl mx-auto">
@@ -233,7 +203,7 @@ const ProcessTimeline = () => {
                   <td className="p-4 text-slate-400">3–5 business days</td>
                   <td className="p-4 text-slate-400">1–2 business days</td>
                 </tr>
-                 <tr>
+                <tr>
                   <td className="p-4 font-medium text-slate-300">Static Graphics</td>
                   <td className="p-4 text-slate-400">Within 48 business hours</td>
                   <td className="p-4 text-slate-400">~24 business hours</td>
@@ -250,15 +220,15 @@ const ProcessTimeline = () => {
 
 // --- GALLERY & STACK SECTION ---
 const GalleryAndStack = ({ openModal }) => {
-    const galleryItems = [
-        { title: 'Short-Form (Style 1)', href: 'https://drive.google.com/file/d/1pzi8aEJUSTCHAJEpi76t9mW5SJ03rd60/view?usp=sharing' },
-        { title: 'Short-Form (Style 2)', href: 'https://drive.google.com/file/d/1rQWj4VAI11bcv_NYAkUKYBP6YauAIp3L/view?usp=sharing' },
-        { title: 'Podcast Intro', href: 'https://youtu.be/thMp-bu-VpM?si=MWFtBYLs5jCQsEMb' },
-        { title: 'Thumbnail (Ref 1)', href: 'https://drive.google.com/file/d/1KFnG3hTvlLBAbrzQhWUQ8vEmwvGLFCFQ/view?usp=sharing' },
-        { title: 'Thumbnail (Ref 2)', href: 'https://drive.google.com/file/d/15UpHXypmH3r2m5_4oEIyLryinVsAeIf9/view?usp=sharing' },
-        { title: 'CTR Improvements', href: 'https://drive.google.com/file/d/1KGnUX3KAXiA26WVuNq_bf1oNjhyAdY44/view?usp=sharing' },
-        { title: 'Podcast Video (Full Episode)', href: 'https://youtu.be/S44_AaeZ928?si=OsPLK_b5pvXbCpnv' },
-    ];
+  const galleryItems = [
+    { title: 'Short-Form (Style 1)', href: 'https://drive.google.com/file/d/1pzi8aEJUSTCHAJEpi76t9mW5SJ03rd60/view?usp=sharing' },
+    { title: 'Short-Form (Style 2)', href: 'https://drive.google.com/file/d/1rQWj4VAI11bcv_NYAkUKYBP6YauAIp3L/view?usp=sharing' },
+    { title: 'Podcast Intro', href: 'https://youtu.be/thMp-bu-VpM?si=MWFtBYLs5jCQsEMb' },
+    { title: 'Thumbnail (Ref 1)', href: 'https://drive.google.com/file/d/1KFnG3hTvlLBAbrzQhWUQ8vEmwvGLFCFQ/view?usp=sharing' },
+    { title: 'Thumbnail (Ref 2)', href: 'https://drive.google.com/file/d/15UpHXypmH3r2m5_4oEIyLryinVsAeIf9/view?usp=sharing' },
+    { title: 'CTR Improvements', href: 'https://drive.google.com/file/d/1KGnUX3KAXiA26WVuNq_bf1oNjhyAdY44/view?usp=sharing' },
+    { title: 'Podcast Video (Full Episode)', href: 'https://youtu.be/S44_AaeZ928?si=OsPLK_b5pvXbCpnv' },
+  ];
 
   const stack = [
     { name: "Google Drive", icon: "https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png" },
@@ -276,7 +246,7 @@ const GalleryAndStack = ({ openModal }) => {
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-50">Example Deliverables & Operating Stack</h2>
           <p className="mt-4 max-w-2xl mx-auto text-slate-400">A preview of the asset quality you can expect and the tools we use to make it happen seamlessly.</p>
         </div>
-        
+
         <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {galleryItems.map(item => (
             <button
@@ -291,7 +261,7 @@ const GalleryAndStack = ({ openModal }) => {
             </button>
           ))}
         </div>
-        
+
         <div className="mt-20 text-center">
           <h3 className="text-2xl font-bold text-slate-100">Our Core Tooling</h3>
           <p className="mt-2 text-slate-400">We integrate directly into your preferred stack.</p>
@@ -318,7 +288,7 @@ const NextSteps = () => {
     "Access Handover (Drive/OneDrive, platforms)",
     "Week-1 Delivery (First batch goes live)"
   ];
-  
+
   const checklist = [
     "Brand kit: logo, color, type, tone guide",
     "Access: IG/FB/YouTube/LinkedIn roles, Drive/OneDrive",
@@ -330,7 +300,7 @@ const NextSteps = () => {
   return (
     <AnimatedSection id="next-steps" className="bg-slate-900/50">
       <div className="container mx-auto px-6">
-         <div className="text-center">
+        <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-50">Let's Get Started</h2>
           <p className="mt-4 max-w-2xl mx-auto text-slate-400">Our onboarding is designed to be fast and efficient, getting us to production in days, not weeks.</p>
         </div>
@@ -339,16 +309,16 @@ const NextSteps = () => {
             <h3 className="text-2xl font-bold text-slate-100">Acceptance & Next Steps</h3>
             <ol className="mt-6 space-y-4">
               {steps.map((step, index) => (
-                 <li key={step} className="flex items-center">
-                   <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-slate-50 font-bold mr-4">{index + 1}</span>
-                   <span className="text-lg text-slate-300">{step}</span>
-                 </li>
+                <li key={step} className="flex items-center">
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-slate-50 font-bold mr-4">{index + 1}</span>
+                  <span className="text-lg text-slate-300">{step}</span>
+                </li>
               ))}
             </ol>
           </div>
           <div>
             <h3 className="text-2xl font-bold text-slate-100">Onboarding Checklist</h3>
-             <ul className="mt-6 space-y-4">
+            <ul className="mt-6 space-y-4">
               {checklist.map(item => (
                 <li key={item} className="flex items-start">
                   <CheckCircleIcon />
@@ -383,22 +353,22 @@ const PodcastProposal = () => {
   const openModal = (url) => {
     let embedUrl = '';
     if (url.includes('youtu.be') || url.includes('youtube.com')) {
-        let videoId;
-        if (url.includes('youtu.be/')) {
-            videoId = url.split('youtu.be/')[1].split('?')[0];
-        } else if (url.includes('watch?v=')) {
-            videoId = url.split('watch?v=')[1].split('&')[0];
-        }
-        if(videoId) {
-            embedUrl = `https://www.youtube.com/embed/${videoId}`;
-        } else {
-            embedUrl = url;
-        }
-    } else if (url.includes('drive.google.com')) {
-        const fileId = url.split('/d/')[1].split('/')[0];
-        embedUrl = `https://drive.google.com/file/d/${fileId}/preview`;
-    } else {
+      let videoId;
+      if (url.includes('youtu.be/')) {
+        videoId = url.split('youtu.be/')[1].split('?')[0];
+      } else if (url.includes('watch?v=')) {
+        videoId = url.split('watch?v=')[1].split('&')[0];
+      }
+      if (videoId) {
+        embedUrl = `https://www.youtube.com/embed/${videoId}`;
+      } else {
         embedUrl = url;
+      }
+    } else if (url.includes('drive.google.com')) {
+      const fileId = url.split('/d/')[1].split('/')[0];
+      embedUrl = `https://drive.google.com/file/d/${fileId}/preview`;
+    } else {
+      embedUrl = url;
     }
     setModalUrl(embedUrl);
   };
@@ -406,10 +376,9 @@ const PodcastProposal = () => {
   const closeModal = () => {
     setModalUrl(null);
   };
-  
+
   return (
-    <div className="bg-black font-sans text-slate-200">
-      <Background />
+    <div className="font-sans text-slate-200">
       <div className="relative z-10">
         <main>
           <Hero />

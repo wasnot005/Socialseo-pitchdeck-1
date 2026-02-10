@@ -61,7 +61,7 @@ const PageArchitecture = () => {
         { page: 'Trial or Lab', tier: 3, video: 50, poster: 0, total: 50 },
         { page: 'Lyrics Page', tier: 1, video: 10, poster: 10, total: 20 },
     ];
-    
+
     return (
         <section className="py-20 text-white">
             <div className="container mx-auto px-4">
@@ -85,7 +85,7 @@ const PageArchitecture = () => {
                                     </tr>
                                 ))}
                             </tbody>
-                             <tfoot>
+                            <tfoot>
                                 <tr className="bg-black/20">
                                     <td colSpan="2" className="p-4 font-bold text-right">Total Monthly Posts</td>
                                     <td className="p-4 font-bold text-lg">150</td>
@@ -212,7 +212,7 @@ const NextSteps = () => (
     <section id="next-steps" className="py-20 text-white">
         <div className="container mx-auto px-4">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Deliverables & Next Steps</h2>
-             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
                 <Card title="Monthly Deliverables">
                     <ul className="space-y-3 text-white/80 list-disc list-inside">
                         <li>Multi-platform publishing (IG, YT, FB, X).</li>
@@ -220,7 +220,7 @@ const NextSteps = () => (
                         <li>One monthly review deck with highlights, top posts, and next month's bets.</li>
                     </ul>
                 </Card>
-                 <Card title="Assumptions & Exclusions">
+                <Card title="Assumptions & Exclusions">
                     <ul className="space-y-3 text-white/80 list-disc list-inside">
                         <li>Client supplies timely assets and grants redistribution rights.</li>
                         <li>No paid boosts, shoutouts, or influencer fees are included.</li>
@@ -241,11 +241,7 @@ const NextSteps = () => (
 // --- Main App Component ---
 export default function UpdatedProposal() {
     return (
-        <div className="bg-gray-900 font-sans leading-relaxed text-white">
-            <div className="fixed inset-0 z-0 overflow-hidden">
-                 <div className="absolute inset-0 bg-black animated-gradient"></div>
-                 <div className="absolute inset-0 opacity-20" style={{backgroundImage: 'url(https://www.transparenttextures.com/patterns/grain.png)', mixBlendMode: 'overlay'}}></div>
-            </div>
+        <div className="font-sans leading-relaxed text-white">
             <div className="relative z-10">
                 <Header />
                 <main>
@@ -257,20 +253,6 @@ export default function UpdatedProposal() {
                     <NextSteps />
                 </main>
             </div>
-            <style jsx global>{`
-                .animated-gradient {
-                    background: radial-gradient(circle at 10% 20%, rgba(128, 0, 128, 0.4), transparent 50%),
-                                radial-gradient(circle at 80% 90%, rgba(0, 0, 255, 0.4), transparent 50%),
-                                radial-gradient(circle at 50% 50%, rgba(255, 25, 25, 0.3), transparent 50%);
-                    background-size: 250% 250%;
-                    animation: moveGradient 25s ease infinite;
-                }
-                @keyframes moveGradient {
-                    0% { background-position: 0% 50%; }
-                    50% { background-position: 100% 50%; }
-                    100% { background-position: 0% 50%; }
-                }
-            `}</style>
         </div>
     );
 }
