@@ -19,4 +19,4 @@ Domain: https://socialdeck.socialseo.in
   - **Kush Report 1**: https://socialdeck.socialseo.in/reports/kushreport1
   - **Kush Report 2**: https://socialdeck.socialseo.in/reports/kushreport2
 - **Kush YouTube Pitch**: https://socialdeck.socialseo.in/kush-youtube-pitch
-
+- **Social SEO Plans**: https://socialdeck.socialseo.in/founder-ai-clone

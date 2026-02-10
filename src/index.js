@@ -15,6 +15,7 @@ import Reports from './reports/Reports';
 import KushReport1 from './reports/KushReport1';
 import KushReport2 from './reports/kushreport2';
 import KushYouTubePitch from './KushYouTubePitch';
+import SocialSeoPlans from './SocialSeoPlans';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,6 +36,8 @@ root.render(
         <Route path="/reports/kushreport2" element={<KushReport2 />} />
         <Route path="/kush-youtube-pitch" element={<KushYouTubePitch />} />
         <Route path="/reports/khushreport1" element={<Navigate to="/reports/kushreport1" replace />} />
+        <Route path="/socialseoplans" element={<SocialSeoPlans />} />
+        <Route path="/founder-ai-clone" element={<SocialSeoPlans />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
