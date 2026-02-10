@@ -14,9 +14,9 @@ export default function SocialSeoPlans() {
     const [showBonus, setShowBonus] = useState(true);
     const calendlyLink = "https://calendly.com/suresh-socialseo/socialseo-instant-report-clone";
 
-    // Deadline Logic (April 15, 2026)
+    // Deadline Logic (Februry 15, 2026)
     useEffect(() => {
-        const deadline = new Date('2026-04-15T23:59:00');
+        const deadline = new Date('2026-02-15T23:59:00');
         const now = new Date();
         if (now > deadline) {
             setShowBonus(false);
@@ -38,7 +38,7 @@ export default function SocialSeoPlans() {
                         <span className="font-bold tracking-tight">Social SEO</span>
                     </div>
                     <div className="bg-white/10 backdrop-blur-lg border border-white/10 px-4 py-2 rounded-full pointer-events-auto">
-                        <span className="text-sm font-medium text-white/80">Founder Brand</span>
+                        <span className="text-sm font-medium text-white/80">Founder-led Personal Brand</span>
                     </div>
                 </header>
 
@@ -140,7 +140,7 @@ export default function SocialSeoPlans() {
                                     <div className="absolute top-0 right-0 p-4 opacity-10 font-black text-9xl leading-none text-red-500 select-none">BONUS</div>
                                     <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                                         <div>
-                                            <div className="inline-block bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">Expires April 15, 2026</div>
+                                            <div className="inline-block bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">Expires February 15, 2026</div>
                                             <h3 className="text-3xl font-bold mb-4">Limited-Time Bonuses</h3>
                                             <p className="text-white/70 mb-6">Sign up before the deadline to unlock both bonuses on any plan.</p>
                                             <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-4 inline-block">
