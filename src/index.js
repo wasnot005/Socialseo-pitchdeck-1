@@ -14,6 +14,7 @@ import RajSocialSEO from './RajSocialSEO';
 import Reports from './reports/Reports';
 import KushReport1 from './reports/KushReport1';
 import KushReport2 from './reports/kushreport2';
+import KushReport3 from './reports/KushReport3';
 import KushYouTubePitch from './KushYouTubePitch';
 import SocialSeoPlans from './SocialSeoPlans';
 import MainHub from './MainHub';
@@ -37,6 +38,7 @@ root.render(
           <Route path="/reports" element={<Reports />} />
           <Route path="/reports/kushreport1" element={<KushReport1 />} />
           <Route path="/reports/kushreport2" element={<KushReport2 />} />
+          <Route path="/reports/kushreport3" element={<KushReport3 />} />
           <Route path="/kush-youtube-pitch" element={<KushYouTubePitch />} />
           <Route path="/reports/khushreport1" element={<Navigate to="/reports/kushreport1" replace />} />
           <Route path="/socialseoplans" element={<SocialSeoPlans />} />

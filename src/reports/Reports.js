@@ -28,6 +28,16 @@ const Reports = () => (
             A performance breakdown after posting 90 videos across a strategic 3-month campaign (Q4).
           </p>
         </Link>
+
+        <Link
+          to="/reports/kushreport3"
+          className="block rounded-xl border border-blue-500/40 bg-blue-500/10 p-6 transition hover:border-blue-400 hover:bg-blue-500/20"
+        >
+          <h2 className="text-2xl font-semibold">Kush – 15-Day Comparative Report</h2>
+          <p className="text-gray-300 mt-2">
+            Jan vs Feb content growth sprint — what happens when you triple your output from 1 to 3 videos/day.
+          </p>
+        </Link>
       </div>
     </div>
   </div>
