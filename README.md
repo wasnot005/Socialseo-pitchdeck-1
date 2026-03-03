@@ -21,6 +21,7 @@ Domain: https://socialdeck.socialseo.in
 - **Kush YouTube Pitch**: https://socialdeck.socialseo.in/kush-youtube-pitch
 - **/founder-ai-clone**: Social SEO Plans page ("Founder AI Clone Personal Brand System") featuring tiered plans, guarantee terms, and direct booking integration.
 - **/main-hub**: Central directory page listing all available routes and proposals.
+- **Ashmit Social SEO**: https://socialdeck.socialseo.in/ashmit-socialseo
 
 ## Global Styling
 The application now uses a **Global Layout System** (`src/Layout.js`) that provides a unified, animated background across all pages, ensuring visual consistency and reducing code duplication.
@@ -37,6 +38,7 @@ The following pages have been refactored to remove local background implementati
 - `KushReport1.js`
 - `kushreport2.js`
 - `KushYouTubePitch.js`
+- `AshmitSocialSEO.js`
 
 ## Deployment
 ```

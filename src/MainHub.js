@@ -12,8 +12,8 @@ const GlassCard = ({ title, description, to, tag }) => (
 
             {tag && (
                 <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 ${tag === 'NEW' ? 'bg-indigo-500 text-white' :
-                        tag === 'UPDATED' ? 'bg-green-500 text-white' :
-                            'bg-gray-700 text-gray-300'
+                    tag === 'UPDATED' ? 'bg-green-500 text-white' :
+                        'bg-gray-700 text-gray-300'
                     }`}>
                     {tag}
                 </span>
@@ -102,6 +102,12 @@ export default function MainHub() {
             description: "Strategy for J&C Languages growth.",
             to: "/jandc-languages",
             tag: "CLIENT"
+        },
+        {
+            title: "Ashmit Shahi — Better Version Podcast",
+            description: "Social SEO fan page distribution engine for Ashmit Shahi's Better Version Podcast. 12 fan pages, 3-tier architecture, podcast-centric content strategy.",
+            to: "/ashmit-socialseo",
+            tag: "NEW"
         }
     ];
 
