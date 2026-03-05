@@ -18,8 +18,9 @@ import KushReport3 from './reports/KushReport3';
 import KushYouTubePitch from './KushYouTubePitch';
 import SocialSeoPlans from './SocialSeoPlans';
 import MainHub from './MainHub';
-import Layout from './Layout';
+import FoundersDreamProposal from './FoundersDreamProposal';
 import AshmitSocialSEO from './AshmitSocialSEO';
+import Layout from './Layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -46,6 +47,7 @@ root.render(
           <Route path="/founder-ai-clone" element={<SocialSeoPlans />} />
           <Route path="/main-hub" element={<MainHub />} />
           <Route path="/ashmit-socialseo" element={<AshmitSocialSEO />} />
+          <Route path="/founders-dream" element={<FoundersDreamProposal />} />
         </Routes>
       </Layout>
     </BrowserRouter>

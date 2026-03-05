@@ -20,6 +20,7 @@ Domain: https://socialdeck.socialseo.in
   - **Kush Report 2**: https://socialdeck.socialseo.in/reports/kushreport2
 - **Kush YouTube Pitch**: https://socialdeck.socialseo.in/kush-youtube-pitch
 - **/founder-ai-clone**: Social SEO Plans page ("Founder AI Clone Personal Brand System") featuring tiered plans, guarantee terms, and direct booking integration.
+- **Founders Dream Proposal**: https://socialdeck.socialseo.in/founders-dream — Social SEO fan page proposal for The Founders Dream (TFD) podcast by Abhishek Vyas. PAS+AIDA copywriting framework, 10 persuasion sections, no pricing — designed to book a call.
 - **/main-hub**: Central directory page listing all available routes and proposals.
 - **Ashmit Social SEO**: https://socialdeck.socialseo.in/ashmit-socialseo
 

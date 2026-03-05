@@ -108,6 +108,12 @@ export default function MainHub() {
             description: "Social SEO fan page distribution engine for Ashmit Shahi's Better Version Podcast. 12 fan pages, 3-tier architecture, podcast-centric content strategy.",
             to: "/ashmit-socialseo",
             tag: "NEW"
+        },
+        {
+            title: "Founders Dream Proposal",
+            description: "Social SEO fan page proposal for The Founders Dream (TFD) podcast. PAS+AIDA copywriting, 10 sections, no pricing — designed to close a call.",
+            to: "/founders-dream",
+            tag: "NEW"
         }
     ];
 
