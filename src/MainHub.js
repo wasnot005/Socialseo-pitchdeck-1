@@ -114,6 +114,12 @@ export default function MainHub() {
             description: "Social SEO fan page proposal for The Founders Dream (TFD) podcast. PAS+AIDA copywriting, 10 sections, no pricing — designed to close a call.",
             to: "/founders-dream",
             tag: "NEW"
+        },
+        {
+            title: "TFD Quotation (Password Protected)",
+            description: "3-tier quotation for The Founders Dream. Growth Engine, Scale Network, Full Domination. Password protected.",
+            to: "/tfd-quotation",
+            tag: "NEW"
         }
     ];
 

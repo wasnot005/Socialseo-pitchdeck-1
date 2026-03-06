@@ -23,6 +23,7 @@ Domain: https://socialdeck.socialseo.in
 - **Founders Dream Proposal**: https://socialdeck.socialseo.in/founders-dream — Social SEO fan page proposal for The Founders Dream (TFD) podcast by Abhishek Vyas. PAS+AIDA copywriting framework, 10 persuasion sections, no pricing — designed to book a call.
 - **/main-hub**: Central directory page listing all available routes and proposals.
 - **Ashmit Social SEO**: https://socialdeck.socialseo.in/ashmit-socialseo
+- **TFD Quotation** (Password Protected): https://socialdeck.socialseo.in/tfd-quotation — 3-tier quotation (Growth Engine ₹5L, Scale Network ₹12L, Full Domination ₹28L). Passcode: `tfd2026`
 
 ## Global Styling
 The application now uses a **Global Layout System** (`src/Layout.js`) that provides a unified, animated background across all pages, ensuring visual consistency and reducing code duplication.

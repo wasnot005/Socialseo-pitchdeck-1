@@ -20,6 +20,7 @@ import SocialSeoPlans from './SocialSeoPlans';
 import MainHub from './MainHub';
 import FoundersDreamProposal from './FoundersDreamProposal';
 import AshmitSocialSEO from './AshmitSocialSEO';
+import TFDQuotation from './TFDQuotation';
 import Layout from './Layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -48,6 +49,7 @@ root.render(
           <Route path="/main-hub" element={<MainHub />} />
           <Route path="/ashmit-socialseo" element={<AshmitSocialSEO />} />
           <Route path="/founders-dream" element={<FoundersDreamProposal />} />
+          <Route path="/tfd-quotation" element={<TFDQuotation />} />
         </Routes>
       </Layout>
     </BrowserRouter>
