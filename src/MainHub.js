@@ -120,6 +120,12 @@ export default function MainHub() {
             description: "3-tier quotation for The Founders Dream. Growth Engine, Scale Network, Full Domination. Password protected.",
             to: "/tfd-quotation",
             tag: "NEW"
+        },
+        {
+            title: "Kush Content Plan",
+            description: "Source Code Lab content strategy. 15 Reels + 15 carousels, 30-day posting calendar, iGaming niche pillars, Plan A/B pricing.",
+            to: "/kush-content-plan",
+            tag: "NEW"
         }
     ];
 
