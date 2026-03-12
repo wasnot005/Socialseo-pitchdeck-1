@@ -309,7 +309,7 @@ const Investment = () => {
     const planA = {
         name: "Plan A",
         subtitle: "Reels Only",
-        price: "55,000",
+        price: "45,000",
         color: "from-indigo-900 to-blue-900",
         border: "border-indigo-500/30",
         items: [
@@ -326,7 +326,7 @@ const Investment = () => {
     const planB = {
         name: "Plan B",
         subtitle: "Reels + Carousels (Full Page)",
-        price: "65,000",
+        price: "55,000",
         color: "from-purple-900 to-indigo-900",
         border: "border-purple-500/30",
         items: [
