@@ -126,6 +126,12 @@ export default function MainHub() {
             description: "Source Code Lab content strategy. 15 Reels + 15 carousels, 30-day posting calendar, iGaming niche pillars, Plan A/B pricing.",
             to: "/kush-content-plan",
             tag: "NEW"
+        },
+        {
+            title: "Custom Social SEO Proposal",
+            description: "Interactive scroller to calculate custom distribution proposal based on volume, pages, and quality tiers.",
+            to: "/custom-socialseo-proposal",
+            tag: "NEW"
         }
     ];
 

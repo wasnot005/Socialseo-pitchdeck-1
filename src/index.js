@@ -22,6 +22,7 @@ import FoundersDreamProposal from './FoundersDreamProposal';
 import AshmitSocialSEO from './AshmitSocialSEO';
 import TFDQuotation from './TFDQuotation';
 import KushContentPlan from './KushContentPlan';
+import BrandQuotation from './BrandQuotation';
 import Layout from './Layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -52,6 +53,7 @@ root.render(
           <Route path="/founders-dream" element={<FoundersDreamProposal />} />
           <Route path="/tfd-quotation" element={<TFDQuotation />} />
           <Route path="/kush-content-plan" element={<KushContentPlan />} />
+          <Route path="/custom-socialseo-proposal" element={<BrandQuotation />} />
         </Routes>
       </Layout>
     </BrowserRouter>
