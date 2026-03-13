@@ -23,6 +23,7 @@ import AshmitSocialSEO from './AshmitSocialSEO';
 import TFDQuotation from './TFDQuotation';
 import KushContentPlan from './KushContentPlan';
 import BrandQuotation from './BrandQuotation';
+import TomJosephProposal from './TomJosephProposal';
 import Layout from './Layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -54,6 +55,7 @@ root.render(
           <Route path="/tfd-quotation" element={<TFDQuotation />} />
           <Route path="/kush-content-plan" element={<KushContentPlan />} />
           <Route path="/custom-socialseo-proposal" element={<BrandQuotation />} />
+          <Route path="/tom-joseph-proposal" element={<TomJosephProposal />} />
         </Routes>
       </Layout>
     </BrowserRouter>

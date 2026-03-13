@@ -24,6 +24,7 @@ Domain: https://socialdeck.socialseo.in
 - **/main-hub**: Central directory page listing all available routes and proposals.
 - **Ashmit Social SEO**: https://socialdeck.socialseo.in/ashmit-socialseo
 - **Custom Social SEO Proposal**: https://socialdeck.socialseo.in/custom-socialseo-proposal — Interactive scroller for custom brand distribution plans.
+- **Tom Joseph Executive Proposal**: https://socialdeck.socialseo.in/tom-joseph-proposal — Dual-stream distribution strategy (AI + Campus) for Tom Joseph.
 - **TFD Quotation** (Password Protected): https://socialdeck.socialseo.in/tfd-quotation — 3-tier quotation (Growth Engine ₹5L, Scale Network ₹12L, Full Domination ₹28L). Passcode: `tfd2026`
 
 ## Global Styling

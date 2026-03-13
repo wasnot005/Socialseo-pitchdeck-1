@@ -132,6 +132,12 @@ export default function MainHub() {
             description: "Interactive scroller to calculate custom distribution proposal based on volume, pages, and quality tiers.",
             to: "/custom-socialseo-proposal",
             tag: "NEW"
+        },
+        {
+            title: "Tom Joseph Executive Proposal",
+            description: "Dual-stream distribution strategy for Tom Joseph (Founder & Investor). AI Clone + Campus Event edits.",
+            to: "/tom-joseph-proposal",
+            tag: "NEW"
         }
     ];
 
